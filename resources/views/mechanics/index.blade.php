@@ -38,13 +38,18 @@
             <td>{{ $mechanic->label }}</td>
             <td>
 
-            <button class="edit-modal-modal btn btn-warning" >
-            <span class="glyphicon glyphicon-primary" data-id="{{$mechanic->id}}" data-title="{{$mechanic->name}}" data-description="{{$mechanic->description}}"></span>Bewerk
+            <button class="btn btn-success btn-sm" >
+            <span class="glyphicon glyphicon" data-id="{{$mechanic->id}}" data-title="{{$mechanic->name}}" data-description="{{$mechanic->description}}"></span>Voeg toe
             </button>
 
-             <button class="delete-modal btn btn-danger">
-            <span class="glyphicon glyphicon-trash" data-id="{{$mechanic->id}}" data-title="{{$mechanic->name}}" data-description="{{$mechanic->description}}" aria-hidden="true"></span>Verwijder
+            <button class="btn btn-warning btn-sm" >
+            <span class="glyphicon glyphicon" data-id="{{$mechanic->id}}" data-title="{{$mechanic->name}}" data-description="{{$mechanic->description}}"></span>Bewerk
             </button>
+
+             <button class="btn btn-danger btn-sm">
+            <span class="glyphicon glyphicon" data-id="{{$mechanic->id}}" data-title="{{$mechanic->name}}" data-description="{{$mechanic->description}}" aria-hidden="true"></span>Verwijder
+            </button>
+
 
             </td>
         </tr>
