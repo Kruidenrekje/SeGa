@@ -20,29 +20,25 @@ class MechanicsController extends Controller
 		return view('mechanics.edit', compact('edit'));
 
 	}
-public function store(Request	$request){
+  public function store(Request	$request){
 
 	$mechanic= new Mechanic;
 	$this->validate($request,
 		['name'=>'required|max:255',
-		'price'=>'required',
-		'description'=>'max:255',
-		'status'=>'required',]);
+		'description'=>'required|max:255',
+		'label'=>'required|max:255',]);
 	$mechanic->name=$request->name;
-	$mechanic->price=$request->price;
-	$mechanic->status=$request->status;
 	$mechanic->description=$request->description;
+	$mechanic->label=$request->label;
 	$mechanic->save();
-	return redirect('/mechanics');}
+	return redirect('/mechanics');
+  }
 
+  public function __construct() {
+       $this->middleware('auth');
+   }
 
-public function deleteAll(Request $request){
-	DB::find($req->id)->delete();
-	return response()->json();}
-
-
-public function __construct() {
-     $this->middleware('auth');
- }
-
-}
+  public function deleteAll(Request $request){
+  	DB::find($req->id)->delete();
+  	return response()->json();}
+  }

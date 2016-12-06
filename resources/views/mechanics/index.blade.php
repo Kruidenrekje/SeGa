@@ -10,12 +10,12 @@
 
                 <a href="{{route('create-mechanic')}}" class="btn btn-primary">
                     <span class="glyphicon glyphicon" aria-hidden="true"></span>
-                    Mechanic toevoegen
+                    Add mechanic
                 </a>
 
                 <a href="{{route('edit-mechanic')}}" class="btn btn-primary">
                     <span class="glyphicon glyphicon" aria-hidden="true"></span>
-                    Mechanics verwijderen
+                    Delete all mechanics
                 </a>
 
             </div>
@@ -24,35 +24,32 @@
     <table class="table table-bordered" style="background-color: white" name="Mechanics">
         <tr>
             <th>#</th>
-            <th>Naam</th>
-            <th>Beschrijving</th>
-            <th>Prijs in €</th>
-            <th>Vooraad</th>
-            <th>Opties</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Labels</th>
+            <th>Options</th>
         </tr>
-
 
         @foreach ($mechanics as $mechanic)
         <tr>
             <td>{{ $mechanic->id }}</td>
             <td>{{ $mechanic->name }}</td>
             <td>{{ $mechanic->description }}</td>
-            <td>{{ $mechanic->price }} </td>
-            <td>
-                @if($mechanic->status == 0)
-                <span>Nee</span>
-                @else
-                <span>Ja</span>
-                @endif
+            <td>{{ $mechanic->label }}</td>
             <td>
 
-            <button class="edit-modal-modal btn btn-warning" >
-            <span class="glyphicon glyphicon-primary"></span>Bewerk
+            <button class="btn btn-success btn-sm" >
+            <span class="glyphicon glyphicon" data-id="{{$mechanic->id}}" data-title="{{$mechanic->name}}" data-description="{{$mechanic->description}}"></span>Add to Project
             </button>
 
-             <button class="delete-modal btn btn-danger">
-            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>Verwijder
+            <button class="btn btn-warning btn-sm" >
+            <span class="glyphicon glyphicon" data-id="{{$mechanic->id}}" data-title="{{$mechanic->name}}" data-description="{{$mechanic->description}}"></span>Edit
             </button>
+
+             <button class="btn btn-danger btn-sm">
+            <span class="glyphicon glyphicon" data-id="{{$mechanic->id}}" data-title="{{$mechanic->name}}" data-description="{{$mechanic->description}}" aria-hidden="true"></span>Delete
+            </button>
+
 
             </td>
         </tr>
