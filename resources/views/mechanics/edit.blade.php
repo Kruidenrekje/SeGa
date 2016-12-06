@@ -7,7 +7,7 @@ Klik om de knop, vervolgens refresh je de pagina
 
 <?php
 
-DB::table('mechanics')-> where() delete();
+DB::table('mechanics')-> delete();
 
 
 return ('/mechanics');
