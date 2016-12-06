@@ -36,7 +36,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                  
+
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -52,7 +52,7 @@
                             <li><a href="{{ route('mechanics') }}">Mechanics</a></li>
                             <li><a href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>
-                            
+
                         @else
                             <li><a href="{{ route('mechanics') }}">Mechanics</a></li>
 

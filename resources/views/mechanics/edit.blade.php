@@ -1,26 +1,13 @@
-@extends('layouts.app')
-@section('content')
+<h1> Alles is nu verwijderd </h1>
+Klik om de knop, vervolgens refresh je de pagina
 
-<title> Game Mechanics </title>
-<div class="container">
-    <h1>Game Mechanics</h1>
-    <div class="panel panel-default">
-        <div class="panel-heading">Menu</div>
-            <div class="panel-body">
-
-                <a href="{{route('create-mechanic')}}" class="btn btn-primary">
-                    <span class="glyphicon glyphicon" aria-hidden="true"></span> 
-                    Mechanic toevoegen
-                </a>
-                <a href="{{route('edit-mechanic')}}" class="btn btn-primary">
-                    <span class="glyphicon glyphicon" aria-hidden="true"></span> 
-                    Mechanic wijzigen
-                </a>
-  
-            </div>
-         </div>
-    </div>
+{{ csrf_field() }}
+<input type=button onclick="parent.location= "mechanics" value='terug'>
 
 
+<?php
 
-@endsection
+DB::table('mechanics')-> where() delete();
+
+
+return ('/mechanics');
