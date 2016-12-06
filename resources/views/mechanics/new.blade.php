@@ -17,16 +17,10 @@
 	        <textarea name="description" id="description" class="form-control"/></textarea>
 	    </div>
 
-	    <div class="form-group">
-	        <label for="price">Prijs</label>
-	        <input type="number" name="price" id="price" class="form-control"/>
-	    </div>
-
-	    <div class="form-group">
-	        <div class="checkbox">
-	            <label for="status"><input type="checkbox" value="1" name="status" checked>Actief</label>
-	        </div>
-	    </div>
+			<div class="form-group">
+					<label for="label">Labels</label>
+					<textarea name="label" id="label" class="form-control"/></textarea>
+			</div>
 
 	    {{ csrf_field() }}
 	    <input type="submit" name="submit" class="btn btn-primary" value="Opslaan">

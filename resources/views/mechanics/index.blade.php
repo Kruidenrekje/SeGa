@@ -26,24 +26,16 @@
             <th>#</th>
             <th>Naam</th>
             <th>Beschrijving</th>
-            <th>Prijs in €</th>
-            <th>Vooraad</th>
+            <th>Labels</th>
             <th>Opties</th>
         </tr>
-
 
         @foreach ($mechanics as $mechanic)
         <tr>
             <td>{{ $mechanic->id }}</td>
             <td>{{ $mechanic->name }}</td>
             <td>{{ $mechanic->description }}</td>
-            <td>{{ $mechanic->price }} </td>
-            <td>
-                @if($mechanic->status == 0)
-                <span>Nee</span>
-                @else
-                <span>Ja</span>
-                @endif
+            <td>{{ $mechanic->label }}</td>
             <td>
 
             <button class="edit-modal-modal btn btn-warning" >

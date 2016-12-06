@@ -17,9 +17,7 @@ class CreateMechanicsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->text('description')->nullable();
-            $table->integer('status');
-            $table->float('price')->nullable();
-            $table->float('vat')->nullable();
+            $table->text('label')->nullable();
             $table->timestamps();
         });
     }
