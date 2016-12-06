@@ -11,11 +11,8 @@
 
         <div class="panel-body">
               Klik hier om terug te gaan
-              {{ csrf_field() }}
               <input type=button onclick="window.location='{{route("mechanics")}}'" value='terug'>
 <?php
 DB::table('mechanics')-> delete();
  ?>
-
-
 @endsection
