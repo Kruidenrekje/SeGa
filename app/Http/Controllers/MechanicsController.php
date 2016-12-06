@@ -20,7 +20,7 @@ class MechanicsController extends Controller
 		return view('mechanics.edit', compact('edit'));
 
 	}
-public function store(Request	$request){
+  public function store(Request	$request){
 
 	$mechanic= new Mechanic;
 	$this->validate($request,
@@ -31,16 +31,14 @@ public function store(Request	$request){
 	$mechanic->description=$request->description;
 	$mechanic->label=$request->label;
 	$mechanic->save();
-	return redirect('/mechanics');}
+	return redirect('/mechanics');
+  }
 
+  public function __construct() {
+       $this->middleware('auth');
+   }
 
-public function deleteAll(Request $request){
-	DB::find($req->id)->delete();
-	return response()->json();}
-
-
-public function __construct() {
-     $this->middleware('auth');
- }
-
-}
+  public function deleteAll(Request $request){
+  	DB::find($req->id)->delete();
+  	return response()->json();}
+  }
