@@ -1,13 +1,21 @@
-<h1> Alles is nu verwijderd </h1>
-Klik om de knop, vervolgens refresh je de pagina
+@extends('layouts.app')
+@section('content')
 
-{{ csrf_field() }}
-<input type=button onclick="parent.location= "mechanics" value='terug'>
+<title> Inhoud van tabel is verwijderd </title>
+<div class="container">
+    <h1>Inhoud van tabel is verwijderd </h1>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+              Menu
+        </div>
 
-
+        <div class="panel-body">
+              Klik hier om terug te gaan
+              {{ csrf_field() }}
+              <input type=button onclick="window.location='{{route("mechanics")}}'" value='terug'>
 <?php
-
 DB::table('mechanics')-> delete();
+ ?>
 
 
-return ('/mechanics');
+@endsection
