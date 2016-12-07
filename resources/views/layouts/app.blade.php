@@ -26,6 +26,20 @@
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
+                     <div class="container">
+                        <div class="row">
+                            <div id="custom-search-input">
+                                 <div class="input-group col-md-12">
+                                    <input type="text" class="  search-query form-control" placeholder="Search" />
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-danger" type="button">
+                                                 <span class=" glyphicon glyphicon-search"></span>
+                                          </button>
+                                        </span>
+                                 </div>
+                            </div>
+                         </div>
+                    </div>
 
                     <!-- Collapsed Hamburger -->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
