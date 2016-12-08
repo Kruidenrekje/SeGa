@@ -3,17 +3,17 @@
 
 
 <div class="container">
-<title>Mechanic toevoegen</title>
-	<h1>Mechanic toevoegen</h1>
+<title>Add mechanic</title>
+	<h1>Add mechanic</h1>
 
 	<form method="post">
 	    <div class="form-group">
-	        <label for="name">Naam</label>
+	        <label for="name">Name</label>
 	        <input type="text" name="name" id="name" class="form-control"/>
 	    </div>
 
 	    <div class="form-group">
-	        <label for="description">Beschrijving</label>
+	        <label for="description">Description</label>
 	        <textarea name="description" id="description" class="form-control"/></textarea>
 	    </div>
 
@@ -23,14 +23,14 @@
 			</div>
 
 	    {{ csrf_field() }}
-	    <input type="submit" name="submit" class="btn btn-primary" value="Opslaan">
+	    <input type="submit" name="submit" class="btn btn-primary" value="Save">
 
 	    @if (count($errors) > 0)
 	    {{ csrf_field() }}
 
-	    <input action="action" onclick="history.go(-2);" name="cancel" class="btn btn-info" value="Annuleer">
+	    <input action="action" onclick="history.go(-2);" name="cancel" class="btn btn-info" value="Cancel">
 	    @else
-	    <input action="action" onclick="history.go(-1);" name="cancel" class="btn btn-info" value="Annuleer">
+	    <input action="action" onclick="history.go(-1);" name="cancel" class="btn btn-info" value="Cancel">
 	    @endif
 
 	    @if (count($errors) > 0)
