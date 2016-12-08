@@ -1,4 +1,4 @@
 # Configurations #
 ###################
 *.env
-*database.sqlite
+storage/database.sqlite
