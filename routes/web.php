@@ -24,3 +24,5 @@ Route::get('/myprojects', 'MyProjectsController@index')->name('myprojects');
 // Route::get('/myprojects/new', MyProjectsController@create)->name('create-project');
 
 Route::post('mechanics/new','MechanicsController@store');
+
+Route::delete('/mechanics/destroy/{id}', 'MechanicsController@destroy')->name('destroy-mechanic');

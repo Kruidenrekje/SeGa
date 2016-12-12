@@ -50,8 +50,8 @@
             <td>{{ $mechanic->name }}</td>
             <td>{{ $mechanic->description }}</td>
             <td>{{ $mechanic->label }}</td>
-
             <td>
+
             <button class="btn btn-success btn-sm" >
             <span class="glyphicon glyphicon" data-id="{{$mechanic->id}}" data-title="{{$mechanic->name}}" data-description="{{$mechanic->description}}"></span>Add to Project
             </button>
@@ -60,9 +60,13 @@
             <span class="glyphicon glyphicon" data-id="{{$mechanic->id}}" data-title="{{$mechanic->name}}" data-description="{{$mechanic->description}}"></span>Edit
             </button>
 
+            {!! Form::open(['method'=>'DELETE', 'route'=>['destroy-mechanic',$mechanic->id]]) !!}
             <button class="btn btn-danger btn-sm">
             <span class="glyphicon glyphicon" data-id="{{$mechanic->id}}" data-title="{{$mechanic->name}}" data-description="{{$mechanic->description}}" aria-hidden="true"></span>Delete
             </button>
+            {!! Form::close() !!}
+
+
             </td>
         </tr>
         @endforeach
