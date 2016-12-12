@@ -5145,16 +5145,16 @@ tbody.collapse.in {
 }
 
 .navbar-default {
-  background-color: pink;
+  background-color: red;
   border-color: #d3e0e9;
 }
 
 .navbar-default .navbar-brand {
-  color: #777;
+  color: lime;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #00cc00;
   background-color: transparent;
 }
 
@@ -5163,7 +5163,7 @@ tbody.collapse.in {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: lime;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -5173,7 +5173,7 @@ tbody.collapse.in {
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #555;
-  background-color: #ff9fb0;
+  background-color: #de0000;
 }
 
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
@@ -5199,13 +5199,13 @@ tbody.collapse.in {
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #ff9fb0;
+  background-color: #de0000;
   color: #555;
 }
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777;
+    color: lime;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #333;
@@ -5213,7 +5213,7 @@ tbody.collapse.in {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555;
-    background-color: #ff9fb0;
+    background-color: #de0000;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     color: #ccc;
@@ -5222,7 +5222,7 @@ tbody.collapse.in {
 }
 
 .navbar-default .navbar-link {
-  color: #777;
+  color: lime;
 }
 
 .navbar-default .navbar-link:hover {
@@ -5230,7 +5230,7 @@ tbody.collapse.in {
 }
 
 .navbar-default .btn-link {
-  color: #777;
+  color: lime;
 }
 
 .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
@@ -7688,12 +7688,8 @@ button.close {
   }
 }
 
-#app {
-  background: orange;
-}
-
-.navbar {
-  background: #373738;
+#app .navbar-default .navbar-nav li a {
+  color: lime;
 }
 
 #custom-search-input {
