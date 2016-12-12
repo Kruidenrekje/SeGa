@@ -63,12 +63,14 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ route('mechanics') }}">Mechanics</a></li>
+                            <li><a href="{{ route('myprojects') }}">My Projects</a></li>
+                            <li><a href="{{ route('mechanics') }}">Game Mechanics</a></li>
                             <li><a href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>
 
                         @else
-                            <li><a href="{{ route('mechanics') }}">Mechanics</a></li>
+                            <li><a href="{{ route('myprojects') }}">My Projects</a></li>
+                            <li><a href="{{ route('mechanics') }}">Game Mechanics</a></li>
 
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -100,5 +102,4 @@
     <!-- Scripts -->
     <script src="/js/app.js"></script>
 </body>
-
 </html>
