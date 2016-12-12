@@ -10,4 +10,9 @@ class MyProjectsController extends Controller
   {
       return view('myprojects.myprojects');
   }
+
+  public function __construct() {
+       $this->middleware('auth');
+   }
+   
 }

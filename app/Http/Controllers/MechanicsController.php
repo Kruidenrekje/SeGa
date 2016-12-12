@@ -38,7 +38,21 @@ class MechanicsController extends Controller
        $this->middleware('auth');
    }
 
-  public function deleteAll(Request $request){
-  	DB::find($req->id)->delete();
-  	return response()->json();}
-  }
+  // public function deleteAll(Request $request){
+  // 	DB::find($req->id)->delete();
+  // 	return response()->json();}
+  // 
+
+
+public function destroy($id)
+{
+    $mechanic = Mechanic::findOrFail($id);
+
+    $mechanic->delete(); //DELETE OCCURS HERE AFTER RECORD FOUND
+
+    return redirect('/mechanics');
+}
+
+
+ }
+
