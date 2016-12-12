@@ -3,8 +3,8 @@
 
 
 <div class="container">
-<title>Add mechanic</title>
-	<h1>Add mechanic</h1>
+<title>Add Mechanic</title>
+	<h1>Add Mechanic</h1>
 
 	<form method="post">
 	    <div class="form-group">
