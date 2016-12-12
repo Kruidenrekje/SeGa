@@ -8,6 +8,7 @@
         <div class="panel-heading">Menu</div>
             <div class="panel-body">
 
+
                 <a href="{{route('create-mechanic')}}" class="btn btn-primary">
                     <span class="glyphicon glyphicon" aria-hidden="true"></span>
                     Add mechanic
@@ -17,9 +18,22 @@
                     <span class="glyphicon glyphicon" aria-hidden="true"></span>
                     Delete all mechanics
                 </a>
-
+              </div>
             </div>
         </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sort by <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+           <li><a href="#">Name</a></li>
+           <li><a href="#">Labels</a></li>
+         </ul>
+       </li>
+     </ul>
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
 
     <table class="table table-bordered" style="background-color: white" name="Mechanics">
         <tr>
