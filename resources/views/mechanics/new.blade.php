@@ -22,7 +22,6 @@
 					<textarea name="label" id="label" class="form-control"/></textarea>
 			</div>
 
-	    {{ csrf_field() }}
 	    <input type="submit" name="submit" class="btn btn-primary" value="Save">
 
 	    @if (count($errors) > 0)
