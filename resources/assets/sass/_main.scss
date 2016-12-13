@@ -5,18 +5,37 @@
             li {
                 a {
                     color: $navbar-default-link-color;
-                }   
-
+                    &:hover {
+                        background-color: $navbar-default-link-hover-color;
+                        border-radius: 3px;
+                    }
+                }
             }
         .open a {
             background-color: #4a4d54;
         }
         }
-        
+        .navbar-toggle {
+            border-color: $navbar-default-link-color;
+            &:hover {
+                background-color: $navbar-default-link-hover-color;
+            }
+            &:focus {
+                background-color: $navbar-default-link-hover-color;
+            }
+            span {
+                background-color: $navbar-default-link-color;
+            }
+        }
+        img {
+            width: 10%;
+            height: auto;
+
+        }
     }
 }
 
-
+//SEARCHBAR
 #custom-search-input {
         margin:0;
         margin-top: 10px;
@@ -49,7 +68,7 @@
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
-        color:#D9230F;
+        color:#D9230F;  
     }
  
     .search-query:focus + button {

@@ -24,13 +24,14 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
+                <img src="img/segaklein.png">
             <div class="container">
                 <div class="navbar-header">
                      <div class="container">
                         <div class="row">
                             <div id="custom-search-input">
-                                 <div class="input-group col-md-12">
-                                    <input type="text" class="  search-query form-control" placeholder="Search" />
+                                 <div class="input-group col-md-7">
+                                    <input type="text" class="  search-query form-control" placeholder="Search for categories or mechanics." />
                                         <span class="input-group-btn">
                                             <button class="btn btn-danger" type="button">
                                                  <span class=" glyphicon glyphicon-search"></span>
