@@ -13,6 +13,11 @@
                     <span class="glyphicon glyphicon" aria-hidden="true"></span>
                     Add mechanic
                 </a>
+
+                <a href="{{route('edit-mechanic')}}" class="btn btn-primary">
+                    <span class="glyphicon glyphicon" aria-hidden="true"></span>
+                    Delete all mechanics
+                </a>
               </div>
             </div>
         </div>
