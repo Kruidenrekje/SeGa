@@ -16,12 +16,7 @@ class MechanicsController extends Controller
     	return view('mechanics.new');
 }
 
-	public function edit(){
-		return view('mechanics.edit', compact('edit'));
-
-	}
   public function store(Request	$request){
-
 	$mechanic= new Mechanic;
 	$this->validate($request,
 		['name'=>'required|max:255',
@@ -33,6 +28,26 @@ class MechanicsController extends Controller
 	$mechanic->save();
 	return redirect('/mechanics');
   }
+
+  public function edit($id){
+    $mechanic = Mechanic::findOrFail($id);
+    return view('edit-mechanic', compact('edit'));
+
+  }
+
+  public function update(Request $request, $id)
+    {
+    $this->validate($request,
+      ['name'=>'required|max:255',
+      'description'=>'required|max:255',
+      'label'=>'required|max:255',]);
+    $mechanic->name=$request->name;
+    $mechanic->description=$request->description;
+    $mechanic->label=$request->label;
+    $mechanic->save();
+
+        return redirect()->route('/mechanics')->with('alert-success','Data Hasbeen Saved!');
+    }
 
   public function __construct() {
        $this->middleware('auth');
