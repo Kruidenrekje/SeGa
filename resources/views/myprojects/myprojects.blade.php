@@ -1,7 +1,9 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
+	<div class="header">
 <h1> My projects </h1>
+	</div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading">Menu</div>
