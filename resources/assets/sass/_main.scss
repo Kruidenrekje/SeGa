@@ -1,6 +1,7 @@
 #app {
     .navbar-default {
             background-color: #353a42;
+            padding-bottom: 2px;
         .navbar-nav {
             li {
                 a {
@@ -28,7 +29,7 @@
             }
         }
         img {
-            width: 10%;
+            width: 100%;
             height: auto;
 
         }
@@ -74,3 +75,21 @@
     .search-query:focus + button {
         z-index: 3;   
     }
+
+.btn-default {
+    background-color: orange;
+    margin: 10px;
+    padding: 15px;
+}
+
+hr {
+    color: $navbar-default-link-color;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.categories {
+    text-align: center;
+}

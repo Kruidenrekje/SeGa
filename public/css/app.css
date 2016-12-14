@@ -7690,6 +7690,7 @@ button.close {
 
 #app .navbar-default {
   background-color: #353a42;
+  padding-bottom: 2px;
 }
 
 #app .navbar-default .navbar-nav li a {
@@ -7722,7 +7723,7 @@ button.close {
 }
 
 #app .navbar-default img {
-  width: 10%;
+  width: 100%;
   height: auto;
 }
 
@@ -7758,6 +7759,24 @@ button.close {
 
 .search-query:focus + button {
   z-index: 3;
+}
+
+.btn-default {
+  background-color: orange;
+  margin: 10px;
+  padding: 15px;
+}
+
+hr {
+  color: #FF9E1D;
+}
+
+.welcome {
+  text-align: center;
+}
+
+.categories {
+  text-align: center;
 }
 
 /*# sourceMappingURL=app.css.map */
