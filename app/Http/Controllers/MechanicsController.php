@@ -10,7 +10,7 @@ class MechanicsController extends Controller
     public function index(){
     	$mechanics = Mechanic::all();
     	return view('mechanics.index', compact('mechanics'));
-      
+
     }
 
     public function create(){
@@ -36,8 +36,7 @@ class MechanicsController extends Controller
 
   }
 
-  public function update(Request $request, $id)
-    {
+  public function update(Request $request, $id){
     $this->validate($request,
       ['name'=>'required|max:255',
       'description'=>'required|max:255',
@@ -47,7 +46,7 @@ class MechanicsController extends Controller
     $mechanic->label=$request->label;
     $mechanic->save();
 
-        return redirect()->route('/mechanics')->with('alert-success','Data Hasbeen Saved!');
+    return redirect()->route('/mechanics')->with('alert-success','Mechanic has been updated!');
     }
 
   public function __construct() {
@@ -57,7 +56,7 @@ class MechanicsController extends Controller
   // public function deleteAll(Request $request){
   // 	DB::find($req->id)->delete();
   // 	return response()->json();}
-  // 
+  //
 
 
 public function destroy($id)
@@ -71,4 +70,3 @@ public function destroy($id)
 
 
  }
-
