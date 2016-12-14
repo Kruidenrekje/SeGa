@@ -10,6 +10,7 @@ class MechanicsController extends Controller
     public function index(){
     	$mechanics = Mechanic::all();
     	return view('mechanics.index', compact('mechanics'));
+      
     }
 
     public function create(){

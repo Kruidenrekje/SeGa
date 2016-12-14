@@ -19,7 +19,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 Route::get('/mechanics', 'MechanicsController@index')->name('mechanics');
 Route::get('/mechanics/new', 'MechanicsController@create')->name('create-mechanic');
-Route::get('/mechanics/edit/{id}', 'MechanicsController@edit')->name('edit-mechanic');
+Route::get('/mechanics/edit', 'MechanicsController@edit')->name('edit-mechanic');
 Route::get('/myprojects', 'MyProjectsController@index')->name('myprojects');
 // Route::get('/myprojects/new', MyProjectsController@create)->name('create-project');
 Route::post('mechanics/new','MechanicsController@store');
