@@ -9,17 +9,17 @@
 	<form method="post">
 	    <div class="form-group">
 	        <label for="name">Name</label>
-	        <input type="text" name="name" id="name" class="form-control"/>
+	        <input type="text" name="name" id="name" class="form-control" placeholder="Enter name of the Mechanic"/>
 	    </div>
 
 	    <div class="form-group">
 	        <label for="description">Description</label>
-	        <textarea name="description" id="description" class="form-control"/></textarea>
+	        <textarea name="description" id="description" class="form-control" placeholder="Enter description of the Mechanic"/></textarea>
 	    </div>
 
 			<div class="form-group">
 					<label for="label">Labels</label>
-					<textarea name="label" id="label" class="form-control"/></textarea>
+					<textarea name="label" id="label" class="form-control" placeholder="Enter labels of the Mechanic"/></textarea>
 			</div>
 
 	    {{ csrf_field() }}
