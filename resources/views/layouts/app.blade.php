@@ -32,7 +32,7 @@
                         <div class="dol-md-7">
                             <div id="custom-search-input">
                                  <div class="input-group col-md-7">
-                                    <input type="text" class="  search-query form-control" placeholder="Search for categories or mechanics." />
+                                    <input type="text" class="  search-query form-control" placeholder="Search for categories or mechanics" />
                                         <span class="input-group-btn">
                                             <button class="btn btn-danger" type="button">
                                                  <span class=" glyphicon glyphicon-search"></span>
@@ -53,16 +53,16 @@
                     <ul class="nav navbar-nav pull-left">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ route('myprojects') }}">My Projects</a></li>
-                            <li><a href="{{ route('mechanics') }}">Game Mechanics</a></li>
+                            <li><a href="{{ route('myprojects') }}">My projects</a></li>
+                            <li><a href="{{ route('mechanics') }}">Game mechanics</a></li>
                     </ul>
                     <ul class="nav navbar-nav pull-right">
                             <li><a href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>
                     </ul>
                         @else
-                            <li><a href="{{ route('myprojects') }}">My Projects</a></li>
-                            <li><a href="{{ route('mechanics') }}">Game Mechanics</a></li>
+                            <li><a href="{{ route('myprojects') }}">My projects</a></li>
+                            <li><a href="{{ route('mechanics') }}">Game mechanics</a></li>
 
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">

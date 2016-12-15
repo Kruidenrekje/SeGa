@@ -3,7 +3,7 @@
 
   <div class="row">
     <div class="col-md-12">
-      <h1>Edit Data</h1>
+      <h1>Edit mechanic</h1>
     </div>
   </div>
   <div class="row">
