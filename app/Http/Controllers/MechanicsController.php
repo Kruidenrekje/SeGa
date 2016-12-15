@@ -32,21 +32,23 @@ class MechanicsController extends Controller
 
   public function edit($id){
     $mechanic = Mechanic::findOrFail($id);
-    return view('edit-mechanic', compact('edit'));
+    return View('edit-mechanic')
+    ->with('mechanic', $mechanic);
 
   }
 
   public function update(Request $request, $id){
+    $mechanic = Mechanic::findOrFail($id);
     $this->validate($request,
-      ['name'=>'required|max:255',
-      'description'=>'required|max:255',
-      'label'=>'required|max:255',]);
-    $mechanic->name=$request->name;
+    ['name'=>'required|max:255',
+    'description'=>'required|max:255',
+    'label'=>'required|max:255',]);
+    $mechanic->name = $request->name;
     $mechanic->description=$request->description;
     $mechanic->label=$request->label;
     $mechanic->save();
 
-    return redirect()->route('/mechanics')->with('alert-success','Mechanic has been updated!');
+    return redirect('/mechanics');
     }
 
   public function __construct() {
