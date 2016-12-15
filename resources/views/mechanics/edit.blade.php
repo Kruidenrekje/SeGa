@@ -1,18 +1,30 @@
 @extends('layouts.app')
 @section('content')
 
-<title> Inhoud van tabel is verwijderd </title>
-<div class="container">
-    <h1>Inhoud van tabel is verwijderd </h1>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-              Menu
-        </div>
-
-        <div class="panel-body">
-              Klik hier om terug te gaan
-              <input type=button onclick="window.location='{{route("mechanics")}}'" value='terug'>
-<?php
-DB::table('mechanics')-> delete();
- ?>
-@endsection
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Edit Data</h1>
+    </div>
+  </div>
+  <div class="row">
+    <form class="" action="{{route('mechanic.update',$mechanic->id)}}" method="post">
+      <input name="_method" type="hidden" value="PATCH">
+      {{csrf_field()}}
+      <div class="form-group{{ ($errors->has('name')) ? $errors->first('name') : '' }}">
+        <input type="text" name="name" class="form-control" placeholder="Enter Title Here" value="{{$mechanic->name}}">
+        {!! $errors->first('name','<p class="help-block">:message</p>') !!}
+      </div>
+      <div class="form-group{{ ($errors->has('description')) ? $errors->first('title') : '' }}">
+        <input type="text" name="description" class="form-control" placeholder="Enter Description Here" value="{{$mechanic->description}}">
+        {!! $errors->first('description','<p class="help-block">:message</p>') !!}
+      </div>
+      <div class="form-group{{ ($errors->has('label')) ? $errors->first('title') : '' }}">
+        <input type="text" name="label" class="form-control" placeholder="Enter Description Here" value="{{$mechanic->label}}">
+        {!! $errors->first('label','<p class="help-block">:message</p>') !!}
+      </div>
+      <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="save">
+      </div>
+    </form>
+  </div>
+  @endsection

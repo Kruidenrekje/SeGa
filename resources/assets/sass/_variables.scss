@@ -17,14 +17,15 @@ $brand-warning: #cbb956;
 $brand-danger: #bf5329;
 
 // Typography
-$font-family-sans-serif: "Raleway", sans-serif;
+$font-family-sans-serif: "Arial", sans-serif;
 $font-size-base: 14px;
 $line-height-base: 1.6;
 $text-color: #636b6f;
 
 // Navbar
-$navbar-default-bg: #fff;
-
+$navbar-default-bg: #303338;
+$navbar-default-link-color:  #FF9E1D;
+$navbar-default-link-hover-color: #53565b;
 // Buttons
 $btn-default-color: $text-color;
 
@@ -35,3 +36,6 @@ $input-color-placeholder: lighten($text-color, 30%);
 
 // Panels
 $panel-default-heading-bg: #fff;
+
+// Dropdowncolor
+$dropdown-bg: #4a4d54;

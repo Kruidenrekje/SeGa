@@ -25,8 +25,22 @@
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
-                <div class="navbar-header">
-
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/segaklein.png">
+                    </div>
+                        <div class="dol-md-7">
+                            <div id="custom-search-input">
+                                 <div class="input-group col-md-7">
+                                    <input type="text" class="  search-query form-control" placeholder="Search for categories or mechanics." />
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-danger" type="button">
+                                                 <span class=" glyphicon glyphicon-search"></span>
+                                          </button>
+                                        </span>
+                                 </div>
+                            </div>
+                        </div>
                     <!-- Collapsed Hamburger -->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
                         <span class="sr-only">Toggle Navigation</span>
@@ -34,27 +48,21 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-
-                    <!-- Branding Image -->
-
-                </div>
-
-                <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        &nbsp;
-                    </ul>
-
+                                <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav pull-left">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ route('mechanics') }}">Mechanics</a></li>
+                            <li><a href="{{ route('myprojects') }}">My Projects</a></li>
+                            <li><a href="{{ route('mechanics') }}">Game Mechanics</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav pull-right">
                             <li><a href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>
-
+                    </ul>
                         @else
-                            <li><a href="{{ route('mechanics') }}">Mechanics</a></li>
+                            <li><a href="{{ route('myprojects') }}">My Projects</a></li>
+                            <li><a href="{{ route('mechanics') }}">Game Mechanics</a></li>
 
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -76,9 +84,17 @@
                             </li>
                         @endif
                     </ul>
+
                 </div>
+
+                    <!-- Branding Image -->
+
+                </div>
+
             </div>
         </nav>
+
+
 
         @yield('content')
     </div>
@@ -86,5 +102,4 @@
     <!-- Scripts -->
     <script src="/js/app.js"></script>
 </body>
-
 </html>
