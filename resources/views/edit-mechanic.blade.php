@@ -9,19 +9,44 @@
 
 {{ Form::model($mechanic, array('route' => array('update-mechanic', $mechanic->id), 'method' => 'PUT')) }}
 
-{!!Form::label('name', 'Name')!!}
-{!!Form::text('name', $mechanic->name)!!}
+<form method="post">
+      <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" value="{{ $mechanic->name }}" />
+      </div>
 
-<br>
+      <div class="form-group">
+          <label for="description">Description</label>
+          <input type="text" name="description" id="description" class="form-control" value= "{{ $mechanic->description }}" />
+      </div>
 
-{!!Form::label('description', 'Description')!!}
-{!!Form::text('description', $mechanic->description)!!}
+      <div class="form-group">
+          <label for="label">Labels</label>
+          <input type="text" name="label" id="label" class="form-control" value= "{{ $mechanic->label }}" />
+      </div>
 
-<br>
+      {{ csrf_field() }}
+      <input type="submit" name="submit" class="btn btn-primary" value="Save">
 
-{!!Form::label('label', 'Label')!!}
-{!!Form::text('label', $mechanic->label)!!}
+      @if (count($errors) > 0)
+      {{ csrf_field() }}
 
-{!!Form::submit('Edit')!!}
+      <input action="action" onclick="history.go(-2);" name="cancel" class="btn btn-info" value="Cancel">
+      @else
+      <input action="action" onclick="history.go(-1);" name="cancel" class="btn btn-info" value="Cancel">
+      @endif
+
+      @if (count($errors) > 0)
+      <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+      </div>
+
+    @endif
+
+  </form>
 {!!Form::close()!!}
 @endsection

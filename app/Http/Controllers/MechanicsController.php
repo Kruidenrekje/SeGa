@@ -39,7 +39,10 @@ class MechanicsController extends Controller
 
   public function update(Request $request, $id){
     $mechanic = Mechanic::findOrFail($id);
-
+    $this->validate($request,
+    ['name'=>'required|max:255',
+    'description'=>'required|max:255',
+    'label'=>'required|max:255',]);
     $mechanic->name = $request->name;
     $mechanic->description=$request->description;
     $mechanic->label=$request->label;
