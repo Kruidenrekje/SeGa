@@ -55,6 +55,11 @@
                         @if (Auth::guest())
                             <li><a href="{{ route('myprojects') }}">My Projects</a></li>
                             <li><a href="{{ route('mechanics') }}">Game Mechanics</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav pull-right">
+                            <li><a href="{{ url('/login') }}">Login</a></li>
+                            <li><a href="{{ url('/register') }}">Register</a></li>
+                    </ul>
                         @else
                             <li><a href="{{ route('myprojects') }}">My Projects</a></li>
                             <li><a href="{{ route('mechanics') }}">Game Mechanics</a></li>
@@ -79,10 +84,7 @@
                             </li>
                         @endif
                     </ul>
-                    <ul class="nav navbar-nav pull-right">
-                        <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
-                    </ul>
+
                 </div>
 
                     <!-- Branding Image -->
