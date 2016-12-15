@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
 
-<title> Game Mechanics </title>
+<title> Game mechanics </title>
 <div class="container">
-    <h1>Game Mechanics</h1>
+    <h1>Game mechanics</h1>
     <div class="panel panel-default">
         <div class="panel-heading">Menu</div>
             <div class="panel-body">
@@ -32,7 +32,6 @@
     <div class="col-md-8 col-md-offset-2">
     <table class="table table-bordered" style="background-color: white" name="Mechanics">
         <tr>
-            <th>#</th>
             <th>Name</th>
             <th>Description</th>
             <th>Labels</th>
@@ -41,7 +40,6 @@
 
         @foreach ($mechanics as $mechanic)
         <tr>
-            <td>{{ $mechanic->id }}</td>
             <td>{{ $mechanic->name }}</td>
             <td>{{ $mechanic->description }}</td>
             <td>{{ $mechanic->label }}</td>
@@ -55,7 +53,7 @@
               <input type="hidden" name="_method" value="delete">
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
               <a href="{{route('edit-mechanic',$mechanic->id)}}" class="btn btn-primary">Edit</a>
-              <input type="submit" class="btn btn-danger" onclick="return confirm('Are you sure to delete this data');" name="name" value="delete">
+              <input type="submit" class="btn btn-danger" onclick="return confirm('Are you sure to delete this data?');" name="name" value="Delete">
             </form>
             </div>
 
