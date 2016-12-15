@@ -29,7 +29,7 @@
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
     </nav>
-
+    <div class="col-md-8 col-md-offset-2">
     <table class="table table-bordered" style="background-color: white" name="Mechanics">
         <tr>
             <th>#</th>
@@ -46,7 +46,7 @@
             <td>{{ $mechanic->description }}</td>
             <td>{{ $mechanic->label }}</td>
             <td>
-
+            <div class="buttons">
             <button class="btn btn-success btn-sm" >
             <span class="glyphicon glyphicon" data-id="{{$mechanic->id}}" data-title="{{$mechanic->name}}" data-description="{{$mechanic->description}}"></span>Add to Project
             </button>
@@ -57,10 +57,12 @@
               <a href="{{route('edit-mechanic',$mechanic->id)}}" class="btn btn-primary">Edit</a>
               <input type="submit" class="btn btn-danger" onclick="return confirm('Are you sure to delete this data');" name="name" value="delete">
             </form>
+            </div>
 
 
             </td>
         </tr>
+    </div>
         @endforeach
     </table>
 </div>

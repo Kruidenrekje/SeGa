@@ -7779,4 +7779,8 @@ hr {
   text-align: center;
 }
 
+.buttons {
+  display: inline-block;
+}
+
 /*# sourceMappingURL=app.css.map */
