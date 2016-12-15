@@ -12,11 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Auth::routes();
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/mechanics', 'MechanicsController@index')->name('mechanics');
 Route::get('/mechanics/new', 'MechanicsController@create')->name('create-mechanic');
 Route::get('/mechanic/{id}/edit', 'MechanicsController@edit')->name('edit-mechanic');
