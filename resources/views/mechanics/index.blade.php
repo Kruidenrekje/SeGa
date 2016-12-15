@@ -32,7 +32,6 @@
 
     <table class="table table-bordered" style="background-color: white" name="Mechanics">
         <tr>
-            <th>#</th>
             <th>Name</th>
             <th>Description</th>
             <th>Labels</th>
@@ -41,7 +40,6 @@
 
         @foreach ($mechanics as $mechanic)
         <tr>
-            <td>{{ $mechanic->id }}</td>
             <td>{{ $mechanic->name }}</td>
             <td>{{ $mechanic->description }}</td>
             <td>{{ $mechanic->label }}</td>
@@ -58,6 +56,7 @@
               <input type="submit" class="btn btn-danger" onclick="return confirm('Are you sure to delete this data');" name="name" value="Delete">
             </form>
 
+          
 
             </td>
         </tr>
