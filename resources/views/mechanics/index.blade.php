@@ -51,15 +51,12 @@
             <span class="glyphicon glyphicon" data-id="{{$mechanic->id}}" data-title="{{$mechanic->name}}" data-description="{{$mechanic->description}}"></span>Add to Project
             </button>
 
-            <button class="btn btn-warning btn-sm" >
-            <span class="glyphicon glyphicon" data-id="{{$mechanic->id}}" data-title="{{$mechanic->name}}" data-description="{{$mechanic->description}}"></span>Edit
-            </button>
-
-            {!! Form::open(['method'=>'DELETE', 'route'=>['destroy-mechanic',$mechanic->id]]) !!}
-            <button class="btn btn-danger btn-sm">
-            <span class="glyphicon glyphicon" data-id="{{$mechanic->id}}" data-title="{{$mechanic->name}}" data-description="{{$mechanic->description}}" aria-hidden="true"></span>Delete
-            </button>
-            {!! Form::close() !!}
+            <form class="" action="{{route('destroy-mechanic',$mechanic->id)}}" method="post">
+              <input type="hidden" name="_method" value="delete">
+              <input type="hidden" name="_token" value="{{ csrf_token() }}">
+              <a href="{{route('edit-mechanic',$mechanic->id)}}" class="btn btn-primary">Edit</a>
+              <input type="submit" class="btn btn-danger" onclick="return confirm('Are you sure to delete this data');" name="name" value="delete">
+            </form>
 
 
             </td>
