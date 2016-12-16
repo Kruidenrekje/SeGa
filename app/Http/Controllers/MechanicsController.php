@@ -78,9 +78,6 @@ public function search(Request $request)
 
     foreach($mechanics as $mechanic)
     {
-      var_dump($mechanic->name);
-      var_dump($mechanic->description);
-      var_dump($mechanic->label);
     }
     return view('search-results', compact('mechanic', 'keyword'));
 }
