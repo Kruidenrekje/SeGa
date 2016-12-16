@@ -17,15 +17,6 @@
             </div>
         </div>
 
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sort by <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-           <li><a href="#">Name</a></li>
-           <li><a href="#">Labels</a></li>
-         </ul>
-       </li>
-     </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
     </nav>
@@ -57,6 +48,15 @@
         </tr>
     </div>
         @endforeach
+          <ul class="nav navbar-nav pull-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sort by <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+           <li><a href="#">Name</a></li>
+           <li><a href="#">Labels</a></li>
+         </ul>
+       </li>
+     </ul>
     </table>
 </div>
 @endsection
