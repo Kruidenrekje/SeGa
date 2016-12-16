@@ -29,7 +29,7 @@
                     <div class="col-md-3">
                         <img src="img/segaklein.png">
                     </div>
-                    {!! Form::open(array('method' =>'GET', 'url'=>'/mechanics/search-results')) !!}
+                    {!! Form::open(array('method' =>'GET', 'route' =>'search-results')) !!}
 
                     {!!Form::text('keyword', null, array('placeholder'=>'search by keyword'))!!}
 

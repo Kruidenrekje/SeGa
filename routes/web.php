@@ -28,4 +28,5 @@ Route::delete('/mechanics/destroy/{id}', 'MechanicsController@destroy')->name('d
 Route::put('mechanics/{id}', 'MechanicsController@update')
 	->name('update-mechanic');
 
-	Route::post('/layouts/app', 'MechanicsController@search');
+Route::get('search', 'MechanicsController@search')
+	->name('search-results');
