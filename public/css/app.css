@@ -5168,7 +5168,7 @@ tbody.collapse.in {
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #53565b;
-  background-color: transparent;
+  background-color: #FFF;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -5209,7 +5209,7 @@ tbody.collapse.in {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #53565b;
-    background-color: transparent;
+    background-color: #FFF;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555;
@@ -7761,14 +7761,16 @@ button.close {
   z-index: 3;
 }
 
-.btn-default {
+.btn-block {
   background-color: orange;
   margin: 10px;
   padding: 15px;
+  border-radius: 3px;
 }
 
 hr {
   color: #FF9E1D;
+  size: 10px;
 }
 
 .welcome {
@@ -7779,8 +7781,14 @@ hr {
   text-align: center;
 }
 
-.buttons {
-  display: inline-block;
+.categories button {
+  color: black;
+}
+
+td .buttons {
+  float: left !important;
+  padding: 0px !important;
+  line-height: 0px !important;
 }
 
 /*# sourceMappingURL=app.css.map */

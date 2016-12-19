@@ -29,6 +29,13 @@
                     <div class="col-md-3">
                         <img src="img/segaklein.png">
                     </div>
+                    {!! Form::open(array('method' =>'GET', 'route' =>'search-results')) !!}
+
+                    {!!Form::text('keyword', null, array('placeholder'=>'search by keyword'))!!}
+
+                    {!!Form::submit('search')!!}
+
+                    {!!Form::close()!!}
                         <div class="dol-md-7">
                             <div id="custom-search-input">
                                  <div class="input-group col-md-7">
@@ -41,6 +48,7 @@
                                  </div>
                             </div>
                         </div>
+                        
                     <!-- Collapsed Hamburger -->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
                         <span class="sr-only">Toggle Navigation</span>

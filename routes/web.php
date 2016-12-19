@@ -25,6 +25,11 @@ Route::get('/mechanic/{id}/edit', 'MechanicsController@edit')->name('edit-mechan
 Route::put('mechanics/{id}', 'MechanicsController@update')->name('update-mechanic');
 Route::delete('/mechanics/destroy/{id}', 'MechanicsController@destroy')->name('destroy-mechanic');
 
+
 Route::get('/projects', 'ProjectsController@index')->name('projects');
 Route::get('/projects/new', 'ProjectsController@create')->name('create-project');
 Route::post('/projects/new', 'ProjectsController@store');
+
+Route::put('mechanics/{id}', 'MechanicsController@update')->name('update-mechanic');
+
+Route::get('search', 'MechanicsController@search')->name('search-results');

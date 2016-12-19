@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Http\Request;
+use Request;
 use App\Mechanic;
 
 
@@ -68,6 +68,21 @@ public function destroy($id)
     $mechanic->delete(); //DELETE OCCURS HERE AFTER RECORD FOUND
 
     return redirect('/mechanics');
+}
+
+public function search(Request $request)
+{
+    $keyword = Request::input('keyword');
+    $mechanics = Mechanic::where("name", "LIKE", "%$keyword%")->get();
+    
+
+    foreach($mechanics as $mechanic)
+    {
+      var_dump($mechanic->name);
+      var_dump($mechanic->description);
+      var_dump($mechanic->label);
+    }
+    return view('search-results', compact('mechanic', 'keyword'));
 }
 
 
