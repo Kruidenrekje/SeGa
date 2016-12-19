@@ -16,6 +16,8 @@
             background-color: #4a4d54;
         }
         }
+
+        //Hamburger menu
         .navbar-toggle {
             border-color: $navbar-default-link-color;
             &:hover {
@@ -80,12 +82,11 @@
     background-color: orange;
     margin: 10px;
     padding: 15px;
-    border-radius: 3px;
-}
+    border-radius: 0px;
 
-hr {
-    color: $navbar-default-link-color;
-    size: 10px;
+    &:hover {
+        background-color:black;
+    }
 }
 
 .welcome {
@@ -100,11 +101,8 @@ hr {
     }
 }
 
-td {
     .buttons {
-    float: left !important;
-    padding: 0px !important;
-    line-height: 0px !important;
-    
+        .btn-sm {
+            padding: 8px;
+        }
     }
-}

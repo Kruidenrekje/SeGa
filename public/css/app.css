@@ -7765,12 +7765,11 @@ button.close {
   background-color: orange;
   margin: 10px;
   padding: 15px;
-  border-radius: 3px;
+  border-radius: 0px;
 }
 
-hr {
-  color: #FF9E1D;
-  size: 10px;
+.btn-block:hover {
+  background-color: black;
 }
 
 .welcome {
@@ -7785,10 +7784,8 @@ hr {
   color: black;
 }
 
-td .buttons {
-  float: left !important;
-  padding: 0px !important;
-  line-height: 0px !important;
+.buttons .btn-sm, .buttons .btn-group-sm > .btn {
+  padding: 8px;
 }
 
 /*# sourceMappingURL=app.css.map */
