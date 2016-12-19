@@ -14,12 +14,12 @@
 
 	    <div class="form-group">
 	        <label for="description">Description</label>
-	        <textarea name="description" id="description" class="form-control" placeholder="Enter description of the mechanic"/></textarea>
+	        <input type="text" name="description" id="description" class="form-control" placeholder="Enter description of the mechanic"/>
 	    </div>
 
 			<div class="form-group">
 					<label for="label">Labels</label>
-					<textarea name="label" id="label" class="form-control" placeholder="Enter labels of the mechanic"/></textarea>
+					<input type="text" name="label" id="label" class="form-control" placeholder="Enter labels of the mechanic"/>
 			</div>
 
 	    {{ csrf_field() }}

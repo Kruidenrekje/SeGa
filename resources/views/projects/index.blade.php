@@ -13,7 +13,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Menu</div>
                     <div class="panel-body">
-                        <a href="{{route('create-mechanic')}}" class="btn btn-primary">
+                        <a href="{{route('create-project')}}" class="btn btn-primary">
                             <span class="glyphicon glyphicon" aria-hidden="true"></span>
                             Add Project
                         </a>

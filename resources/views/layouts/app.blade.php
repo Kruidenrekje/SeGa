@@ -29,7 +29,7 @@
                     <div class="col-md-3">
                         <img src="img/segaklein.png">
                     </div>
-                    {!! Form::open(array('method' =>'GET', 'url'=>'/mechanics/search-results')) !!}
+                    {!! Form::open(array('method' =>'GET', 'route' =>'search-results')) !!}
 
                     {!!Form::text('keyword', null, array('placeholder'=>'search by keyword'))!!}
 
@@ -61,9 +61,9 @@
                     <ul class="nav navbar-nav pull-left">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ route('home') }}">Categories</a></li>
+                            <li><a href="{{ route('categories') }}">Categories</a></li>
                             <li><a href="{{ route('mechanics') }}">Game mechanics</a></li>
-                            <li><a href="{{ route('myprojects') }}">My projects</a></li>
+                            <li><a href="{{ route('projects') }}">My projects</a></li>
 
                     </ul>
                     <ul class="nav navbar-nav pull-right">
@@ -74,9 +74,9 @@
                     <ul class="nav navbar-nav pull-left">
                         @else
 
-                            <li><a href="{{ route('home') }}">Categories</a></li>
+                            <li><a href="{{ route('categories') }}">Categories</a></li>
                             <li><a href="{{ route('mechanics') }}">Game mechanics</a></li>
-                            <li><a href="{{ route('myprojects') }}">My projects</a></li>
+                            <li><a href="{{ route('projects') }}">My projects</a></li>
                     </ul>
                     <ul class="nav navbar-nav pull-right">
                             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> {{ Auth::user()->name }} <span class="caret"></span></a>

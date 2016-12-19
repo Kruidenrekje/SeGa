@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Http\Request;
+use Request;
 use App\Mechanic;
 
 
@@ -73,14 +73,13 @@ public function destroy($id)
 public function search(Request $request)
 {
     $keyword = Request::input('keyword');
-    $mechanic = Mechanic::where("name", "LIKE", "%$keyword%")->get();
+    $mechanics = Mechanic::where("name", "LIKE", "%$keyword%")->get();
     
+
     foreach($mechanics as $mechanic)
     {
-    var_dump($mechanic->name);
     }
-
-    return view('search-regsults', compact('mechanic', 'keyword'));
+    return view('search-results', compact('mechanic', 'keyword'));
 }
 
 
