@@ -7,10 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
   protected $fillable = [
-   'mechanic_id', 'project_id'
-];
+       'user_id', 'status'
+  ];
 
-public function project() {
-   return $this->belongsTo('App\Project');
-}
+  public function projectfiles()
+  {
+      return $this->hasMany('App\ProjectFile');
+  }
 }
