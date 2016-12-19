@@ -5168,7 +5168,7 @@ tbody.collapse.in {
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #53565b;
-  background-color: #FFF;
+  background-color: #ffb24d;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -5209,7 +5209,7 @@ tbody.collapse.in {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #53565b;
-    background-color: #FFF;
+    background-color: #ffb24d;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555;
@@ -7769,7 +7769,8 @@ button.close {
 }
 
 .btn-block:hover {
-  background-color: black;
+  background-color: #ffb24d;
+  color: black;
 }
 
 .welcome {

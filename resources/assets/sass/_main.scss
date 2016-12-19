@@ -35,6 +35,7 @@
             height: auto;
 
         }
+
     }
 }
 
@@ -85,7 +86,8 @@
     border-radius: 0px;
 
     &:hover {
-        background-color:black;
+        background-color: $navbar-default-link-hover-bg;
+        color: black;
     }
 }
 
