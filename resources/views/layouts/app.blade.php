@@ -23,32 +23,29 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="img/segaklein.png">
-                    </div>
-                    {!! Form::open(array('method' =>'GET', 'route' =>'search-results')) !!}
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="img/segaklein.png">
+                </div>
 
-                    {!!Form::text('keyword', null, array('placeholder'=>'search by keyword'))!!}
+        <div class="dol-md-7">
+        <div id="custom-search-input">
+            {!! Form::open(array('method' =>'GET', 'route' =>'search-results')) !!}
+            <div class="input-group col-md-7">
+            {!!Form::text('keyword', null, array('placeholder'=>'Search for categories or mechanics'))!!}
+                  <span class="input-group-btn">
+                  <button class="btn btn-danger" type="button">
+                  {!!Form::submit('search')!!}
+                  <span class=" glyphicon glyphicon-search"></span>
+                  </button>
+                  </span>
+            </div>
+        </div>
+        </div>
+        {!!Form::close()!!}
 
-                    {!!Form::submit('search')!!}
-
-                    {!!Form::close()!!}
-                        <div class="dol-md-7">
-                            <div id="custom-search-input">
-                                 <div class="input-group col-md-7">
-                                    <input type="text" class="  search-query form-control" placeholder="Search for categories or mechanics" />
-                                        <span class="input-group-btn">
-                                            <button class="btn btn-danger" type="button">
-                                                 <span class=" glyphicon glyphicon-search"></span>
-                                          </button>
-                                        </span>
-                                 </div>
-                            </div>
-                        </div>
-                        
                     <!-- Collapsed Hamburger -->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
                         <span class="sr-only">Toggle Navigation</span>
@@ -91,7 +88,7 @@
                         @endif
 
                 </div>
-                <!-- Branding Image -->
+
                 </div>
             </div>
         </nav>
