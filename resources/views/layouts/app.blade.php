@@ -34,11 +34,10 @@
         <div id="custom-search-input">
             {!! Form::open(array('method' =>'GET', 'route' =>'search-results')) !!}
             <div class="input-group col-md-7">
-            {!!Form::text('keyword', null, array('placeholder'=>'Search for categories or mechanics'))!!}
+            {!!Form::text('keyword', null, array('placeholder'=>'Search for mechanics'))!!}
                   <span class="input-group-btn">
                   <button class="btn btn-danger" type="button">
                   {!!Form::submit('search')!!}
-                  <span class=" glyphicon glyphicon-search"></span>
                   </button>
                   </span>
             </div>

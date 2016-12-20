@@ -8,7 +8,8 @@
             <th>Options</th>
         </tr>
 
-        <tr>
+        @foreach($mechanics as $mechanic)
+        <tr>    
             <td>{{ $mechanic->name }}</td>
             <td>{{ $mechanic->description }}</td>
             <td>{{ $mechanic->label }}</td>
@@ -24,6 +25,7 @@
             </form>
             </td>
         </tr>
+        @endforeach
     </div>
     </table>
 
