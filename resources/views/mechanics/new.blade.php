@@ -3,23 +3,23 @@
 
 
 <div class="container">
-<title>Add Mechanic</title>
-	<h1>Add Mechanic</h1>
+<title>Add mechanic</title>
+	<h1>Add mechanic</h1>
 
 	<form method="post">
 	    <div class="form-group">
 	        <label for="name">Name</label>
-	        <input type="text" name="name" id="name" class="form-control"/>
+	        <input type="text" name="name" id="name" class="form-control" placeholder="Enter name of the mechanic"/>
 	    </div>
 
 	    <div class="form-group">
 	        <label for="description">Description</label>
-	        <textarea name="description" id="description" class="form-control"/></textarea>
+	        <input type="text" name="description" id="description" class="form-control" placeholder="Enter description of the mechanic"/>
 	    </div>
 
 			<div class="form-group">
 					<label for="label">Labels</label>
-					<textarea name="label" id="label" class="form-control"/></textarea>
+					<input type="text" name="label" id="label" class="form-control" placeholder="Enter labels of the mechanic"/>
 			</div>
 
 	    {{ csrf_field() }}
