@@ -7688,13 +7688,28 @@ button.close {
   }
 }
 
+@font-face {
+  font-family: Quatron;
+  src: url(..public/fonts/Quatron.ttf);
+}
+
 #app .navbar-default {
-  background-color: #353a42;
+  background-color: #303338;
   padding-bottom: 2px;
 }
 
+#app .navbar-default .name p {
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: Quatron;
+}
+
 #app .navbar-default .navbar-nav li a {
-  color: #FF9E1D;
+  color: white;
+  font-weight: bold;
 }
 
 #app .navbar-default .navbar-nav li a:hover {
@@ -7707,7 +7722,7 @@ button.close {
 }
 
 #app .navbar-default .navbar-toggle {
-  border-color: #FF9E1D;
+  border-color: white;
 }
 
 #app .navbar-default .navbar-toggle:hover {
@@ -7719,7 +7734,7 @@ button.close {
 }
 
 #app .navbar-default .navbar-toggle span {
-  background-color: #FF9E1D;
+  background-color: white;
 }
 
 #app .navbar-default img {
@@ -7727,34 +7742,54 @@ button.close {
   height: auto;
 }
 
-#app .navbar-default #custom-search-input {
-  margin-top: 20px;
+#app .navbar-default #custom-search-input input {
+  width: 100%;
+  text-align: center;
 }
 
-#app .navbar-default #custom-search-input .input-group input {
+#app .navbar-default #custom-search-input .input-group {
   width: 100%;
 }
 
-.welcome {
+#app .welcome {
   text-align: center;
 }
 
-.categories {
+#app .categories {
   text-align: center;
 }
 
-.categories button {
+#app .categories button {
   color: black;
   background-color: #FF9E1D;
+  border-radius: 0px;
 }
 
-.categories button:hover {
+#app .categories button:hover {
   color: black;
   background-color: #ffb24d;
 }
 
-.buttons .btn-sm, .buttons .btn-group-sm > .btn {
+#app .categories .btn-group {
+  vertical-align: none;
+}
+
+#app .buttons .btn-sm, #app .buttons .btn-group-sm > .btn {
   padding: 8px;
+}
+
+#app footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  background: #303338;
+}
+
+#app footer p {
+  text-align: center;
+  color: white;
 }
 
 /*# sourceMappingURL=app.css.map */
