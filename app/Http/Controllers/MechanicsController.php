@@ -79,7 +79,7 @@ public function search(Request $request)
     foreach($mechanics as $mechanic)
     {
     }
-    return view('search-results', compact('mechanic', 'keyword'));
+    return view('search-results', ['mechanics' => $mechanics]);
 }
 
 
