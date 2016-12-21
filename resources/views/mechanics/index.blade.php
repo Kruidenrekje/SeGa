@@ -54,7 +54,7 @@
             <ul class="dropdown-menu">
            <li><a href="#">Name</a></li>
            <li><a href="#">Labels</a></li>
-         </ul>
+         </ul>  
        </li>
      </ul>
     </table>
