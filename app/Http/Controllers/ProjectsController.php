@@ -14,15 +14,14 @@ class ProjectsController extends Controller
        $this->middleware('auth');
    }
 
-  public function index()
-  {
+  public function index(){
+
         return view('projects.index');
   }
 
-    public function create()
-    {
-        $mechanic = Mechanic::all();
-        return view('projects.new');
+      public function create(){
+        $mechanics = Mechanic::all();
+        return view('projects.new', compact('mechanics'));
     }
 
 
