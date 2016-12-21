@@ -15,7 +15,7 @@
                     <div class="panel-body">
                         <a href="{{route('create-project')}}" class="btn btn-primary">
                             <span class="glyphicon glyphicon" aria-hidden="true"></span>
-                            Add Project
+                            Create Project
                         </a>
                     </div>
             </div>
