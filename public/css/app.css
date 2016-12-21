@@ -7727,50 +7727,12 @@ button.close {
   height: auto;
 }
 
-#custom-search-input {
-  margin: 0;
-  margin-top: 10px;
-  padding: 0;
+#app .navbar-default #custom-search-input {
+  margin-top: 20px;
 }
 
-#custom-search-input .search-query {
-  padding-right: 3px;
-  padding-right: 4px \9;
-  padding-left: 3px;
-  padding-left: 4px \9;
-  /* IE7-8 doesn't have border-radius, so don't indent the padding */
-  margin-bottom: 0;
-  border-radius: 3px;
-}
-
-#custom-search-input button {
-  border: 0;
-  background: none;
-  /** belows styles are working good */
-  padding: 2px 5px;
-  margin-top: 2px;
-  position: relative;
-  left: -28px;
-  /* IE7-8 doesn't have border-radius, so don't indent the padding */
-  margin-bottom: 0;
-  border-radius: 3px;
-  color: #D9230F;
-}
-
-.search-query:focus + button {
-  z-index: 3;
-}
-
-.btn-block {
-  background-color: orange;
-  margin: 10px;
-  padding: 15px;
-  border-radius: 0px;
-}
-
-.btn-block:hover {
-  background-color: #ffb24d;
-  color: black;
+#app .navbar-default #custom-search-input .input-group input {
+  width: 100%;
 }
 
 .welcome {
@@ -7783,6 +7745,12 @@ button.close {
 
 .categories button {
   color: black;
+  background-color: #FF9E1D;
+}
+
+.categories button:hover {
+  color: black;
+  background-color: #ffb24d;
 }
 
 .buttons .btn-sm, .buttons .btn-group-sm > .btn {
