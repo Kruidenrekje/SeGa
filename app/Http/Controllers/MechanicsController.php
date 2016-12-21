@@ -82,5 +82,12 @@ public function search(Request $request)
     return view('search-results', ['mechanics' => $mechanics]);
 }
 
+public function addtoproject(Request $request, $id)
+{
+  $mechanic = Mechanic::findOrFail($id);
+  return View('add-to-project')
+  ->with('mechanic', $mechanic);
 
- }
+  }
+}
+
