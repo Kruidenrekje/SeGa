@@ -33,8 +33,13 @@
         <div class="col-md-7">
         <div id="custom-search-input">
             {!! Form::open(array('method' =>'GET', 'route' =>'search-results')) !!}
+<<<<<<< HEAD
             <div class="input-group col-md-12">
             {!!Form::text('keyword', null, array('placeholder'=>'Search for categories or mechanics'))!!}
+=======
+            <div class="input-group col-md-7">
+            {!!Form::text('keyword', null, array('placeholder'=>'Search for mechanics'))!!}
+>>>>>>> refs/remotes/origin/master
                   <span class="input-group-btn">
                   <button class="btn btn-danger" type="button">
                   {!!Form::submit('search')!!}
