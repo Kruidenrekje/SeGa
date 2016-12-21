@@ -23,7 +23,7 @@ Route::post('mechanics/new','MechanicsController@store');
 
 Route::get('/mechanic/{id}/edit', 'MechanicsController@edit')->name('edit-mechanic');
 Route::put('mechanics/{id}', 'MechanicsController@update')->name('update-mechanic');
-Route::delete('/mechanics/destroy/{id}', 'MechanicsController@destroy')->name('destroy-mechanic');
+Route::get('/mechanics/destroy/{id}', 'MechanicsController@destroy')->name('destroy-mechanic');
 
 
 Route::get('/projects', 'ProjectsController@index')->name('projects');

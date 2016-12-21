@@ -13,11 +13,17 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Menu</div>
                     <div class="panel-body">
+                    <form method="post">
+                      <div class="form-group">
+                          <label for="name">Name</label>
+                          <input type="text" name="name" id="projectname" class="form-control" placeholder="Enter name of the Project"/>
+                      </div>
+                    </form>
                         <a href="{{route('create-project')}}" class="btn btn-primary">
                             <span class="glyphicon glyphicon" aria-hidden="true"></span>
                             Create Project
                         </a>
-                    </div>
+                    </div> 
             </div>
         </div>
     </div>

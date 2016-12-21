@@ -43,7 +43,11 @@
               <input type="hidden" name="_method" value="delete">
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
               <a href="{{route('edit-mechanic',$mechanic->id)}}" class="btn btn-primary">Edit</a>
-              <input type="submit" class="btn btn-danger" onclick="return confirm('Are you sure to delete this data?');" name="name" value="Delete">
+
+              <input type="hidden" name="_method" value="destroy">
+              <input type="hidden" name="_token" value="{{ csrf_token() }}">
+              <a href="{{route('destroy-mechanic',$mechanic->id)}}" class="btn btn-danger" onclick="return confirm('Are you sure to delete this data?')">Delete</a>
+
             </td>
         </tr>
     </div>

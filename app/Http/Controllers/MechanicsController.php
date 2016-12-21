@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use Request;
+use Illuminate\Http\Request;
 use App\Mechanic;
 
 
@@ -72,7 +72,7 @@ public function destroy($id)
 
 public function search(Request $request)
 {
-    $keyword = Request::input('keyword');
+    $keyword = $request->input('keyword');
     $mechanics = Mechanic::where("name", "LIKE", "%$keyword%")->get();
     
 
@@ -85,9 +85,22 @@ public function search(Request $request)
 public function addtoproject(Request $request, $id)
 {
   $mechanic = Mechanic::findOrFail($id);
+
   return View('add-to-project')
   ->with('mechanic', $mechanic);
 
   }
+
+public function createproject(Request $request)
+{
+  $this->validate($request,
+    ['projectname'=>'required|max:255',
+    'description'=>'required|max:255',
+    'label'=>'required|max:255',]);
+    $mechanic->projectname = $request->projectname;
+    $mechanic->save();
+
+    return redirect('/mechanics');
+}
 }
 

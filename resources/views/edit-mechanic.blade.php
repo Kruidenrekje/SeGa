@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
 
+<title>Edit Mechanic</title>
+<div class="container">
 <div class="row">
   <div class="col-md-12">
     <h1>Edit Data</h1>
@@ -48,5 +50,6 @@
     @endif
 
   </form>
+  </div>
 {!!Form::close()!!}
 @endsection

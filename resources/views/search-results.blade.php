@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('content')
+<title>Edit Mechanic</title>
+<div class="container">
 <table class="table table-bordered" style="background-color: white" name="Mechanics">
         <tr>
             <th>Name</th>
@@ -29,5 +31,6 @@
         @endforeach
     </div>
     </table>
+</div>
 
 @endsection

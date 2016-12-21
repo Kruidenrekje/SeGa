@@ -22,14 +22,12 @@
     </table>
 
     <h4>Add to which project?</h4>
-    <?php
-    $users = App\User::where('active', 1)->get();
-
-    foreach ($users as $user) 
-    {
-      echo $user->name;
-    }
-?>
+    <form method="post">
+      <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter name of the mechanic"/>
+      </div>
+      </form>
       </div>
 
 @endsection
