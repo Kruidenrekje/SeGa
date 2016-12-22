@@ -7693,6 +7693,24 @@ button.close {
   src: url(..public/fonts/Quatron.ttf);
 }
 
+.jumbotron {
+  background-color: #E6E6E6;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.jumbotron h2 {
+  font-size: 16pt;
+}
+
+.jumbotron h3 {
+  font-size: 12pt;
+}
+
 #app .navbar-default {
   background-color: #303338;
   padding-bottom: 2px;
@@ -7761,13 +7779,14 @@ button.close {
 
 #app .categories button {
   color: black;
-  background-color: #FF9E1D;
+  background: -webkit-linear-gradient(#FF9E1D, #FFB31A);
+  background: linear-gradient(#FF9E1D, #FFB31A);
   border-radius: 0px;
 }
 
 #app .categories button:hover {
   color: black;
-  background-color: #ffb24d;
+  background-color: #FFB31A;
 }
 
 #app .categories .btn-group {

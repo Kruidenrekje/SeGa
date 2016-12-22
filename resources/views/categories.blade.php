@@ -1,14 +1,14 @@
 @extends('layouts.app')
 @section('content')
 
+<div class="jumbotron">
+			<h1>Welcome to Mechanistry</h1>
+			<h3>With this tool, you can easily find Game Mechanics that fit your own
+				projects and help you with getting ideas.</h3>
+	</div>
 <div  class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="welcome">
-			<h1>Welcome!</h1>
-			<hr>
-			<h3>Start browsing by selecting a category</h3>
-		</div>
 			<div class="categories">
                 <div class="col-xs-6 col-md-4">
                     <div class="btn-group" role="group" aria-label="...">
