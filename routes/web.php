@@ -32,6 +32,6 @@ Route::post('/projects/new', 'ProjectsController@store');
 
 Route::put('mechanics/{id}', 'MechanicsController@update')->name('update-mechanic');
 
-Route::get('search', 'MechanicsController@search')->name('search-results');
+Route::get('search', 'SearchController@search')->name('search-results');
 
 Route::get('mechanics/{id}/addtoproject', 'MechanicsController@addtoproject')->name('add-to-project');
