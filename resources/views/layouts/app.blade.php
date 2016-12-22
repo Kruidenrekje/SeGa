@@ -35,15 +35,14 @@
             <div class="row">
                 <div class="col-md-12">
                     <div id="custom-search-input">
-                    {!! Form::open(array('method' =>'GET', 'route' =>'search-results')) !!}
-                        <div class="input-group col-md-12">
-                                <div class ="searchicon pull-right">
-                            <span class="glyphicon glyphicon-search"></span>
-                                </div>
-                        {!!Form::text('keyword', null, array('placeholder'=>'Search for mechanics...'))!!}
-                        </div>
+                        {!! Form::open(array('method' =>'GET', 'route' =>'search-results')) !!}
+                            <div class="form-group has-feedback">
+    <input type="text" placeholder="Search for mechanics..." class="form-control" id="inputSuccess2"/>
+    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+</div>
                     </div>
                 </div>
+            </div>
                         {!!Form::close()!!}
 
                     <!-- Collapsed Hamburger -->
