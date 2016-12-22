@@ -20,6 +20,7 @@
 .other-color{
   background-color: #F2F2F2;
 }
+
 #app {
     .navbar-default {
             background-color: $navbar-default-bg;
@@ -82,7 +83,7 @@
                     width: 100%;
                 }
         }
-    }
+}
 
     .welcome {
     text-align: center;
@@ -138,3 +139,6 @@
                 color: white;
             }
     }
+
+    
+
