@@ -55,12 +55,6 @@ class MechanicsController extends Controller
        $this->middleware('auth');
    }
 
-  // public function deleteAll(Request $request){
-  // 	DB::find($req->id)->delete();
-  // 	return response()->json();}
-  //
-
-
 public function destroy($id)
 {
     $mechanic = Mechanic::findOrFail($id);
@@ -74,7 +68,7 @@ public function search(Request $request)
 {
     $keyword = $request->input('keyword');
     $mechanics = Mechanic::where("name", "LIKE", "%$keyword%")->get();
-    
+
 
     foreach($mechanics as $mechanic)
     {
@@ -103,4 +97,3 @@ public function createproject(Request $request)
     return redirect('/mechanics');
 }
 }
-
