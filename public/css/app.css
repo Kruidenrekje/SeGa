@@ -7717,11 +7717,6 @@ button.close {
 
 #app .navbar-default {
   background-color: #303338;
-<<<<<<< HEAD
-  padding-bottom: 2px;
-  margin-bottom: 0px;
-=======
->>>>>>> origin/M-branch1
 }
 
 #app .navbar-default .name p {
@@ -7787,11 +7782,8 @@ button.close {
 
 .categories button {
   color: black;
-<<<<<<< HEAD
-=======
   background: -webkit-linear-gradient(#FF9E1D, #FFB31A);
   background: linear-gradient(#FF9E1D, #FFB31A);
->>>>>>> origin/M-branch1
   border-radius: 0px;
 }
 
