@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use Request;
+use Illuminate\Http\Request;
 use App\Mechanic;
 
 
@@ -55,12 +55,6 @@ class MechanicsController extends Controller
        $this->middleware('auth');
    }
 
-  // public function deleteAll(Request $request){
-  // 	DB::find($req->id)->delete();
-  // 	return response()->json();}
-  //
-
-
 public function destroy($id)
 {
     $mechanic = Mechanic::findOrFail($id);
@@ -72,9 +66,9 @@ public function destroy($id)
 
 public function search(Request $request)
 {
-    $keyword = Request::input('keyword');
+    $keyword = $request->input('keyword');
     $mechanics = Mechanic::where("name", "LIKE", "%$keyword%")->get();
-    
+
 
     foreach($mechanics as $mechanic)
     {
@@ -82,5 +76,24 @@ public function search(Request $request)
     return view('search-results', ['mechanics' => $mechanics]);
 }
 
+public function addtoproject(Request $request, $id)
+{
+  $mechanic = Mechanic::findOrFail($id);
 
- }
+  return View('add-to-project')
+  ->with('mechanic', $mechanic);
+
+  }
+
+public function createproject(Request $request)
+{
+  $this->validate($request,
+    ['projectname'=>'required|max:255',
+    'description'=>'required|max:255',
+    'label'=>'required|max:255',]);
+    $mechanic->projectname = $request->projectname;
+    $mechanic->save();
+
+    return redirect('/mechanics');
+}
+}

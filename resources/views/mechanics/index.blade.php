@@ -35,28 +35,31 @@
             <td>{{ $mechanic->description }}</td>
             <td>{{ $mechanic->label }}</td>
             <td class="buttons">
-            <button class="btn btn-success btn-sm" >
-            <form class="" action="{{route('destroy-mechanic',$mechanic->id)}}" method="post">
-            <span class="glyphicon glyphicon" data-id="{{$mechanic->id}}" data-title="{{$mechanic->name}}" data-description="{{$mechanic->description}}"></span>Add to Project
-            </button>
+
+              <input type="hidden" name="_method" value="delete">
+              <input type="hidden" name="_token" value="{{ csrf_token() }}">
+              <a href="{{route('add-to-project',$mechanic->id)}}" class="btn btn-primary">Add to Project</a>
+
               <input type="hidden" name="_method" value="delete">
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
               <a href="{{route('edit-mechanic',$mechanic->id)}}" class="btn btn-primary">Edit</a>
-              <input type="submit" class="btn btn-danger" onclick="return confirm('Are you sure to delete this data?');" name="name" value="Delete">
-            </form>
+
+              <input type="hidden" name="_method" value="destroy">
+              <input type="hidden" name="_token" value="{{ csrf_token() }}">
+              <a href="{{route('destroy-mechanic',$mechanic->id)}}" class="btn btn-danger" onclick="return confirm('Are you sure to delete this data?')">Delete</a>
+
             </td>
         </tr>
     </div>
         @endforeach
-          <ul class="nav navbar-nav pull-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sort by <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-           <li><a href="#">Name</a></li>
-           <li><a href="#">Labels</a></li>
-         </ul>  
-       </li>
-     </ul>
+            <ul class="dropdown pull-right">
+            <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sort by <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="#">Name</a></li>
+                <li><a href="#">Labels</a></li>
+            </li>
+          </ul>
     </table>
 </div>
 @endsection

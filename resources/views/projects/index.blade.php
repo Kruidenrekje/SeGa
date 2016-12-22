@@ -13,9 +13,12 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Menu</div>
                     <div class="panel-body">
+
+
+                      <!-- hier moet een table van projecten komen -->
                         <a href="{{route('create-project')}}" class="btn btn-primary">
                             <span class="glyphicon glyphicon" aria-hidden="true"></span>
-                            Add Project
+                            Create Project
                         </a>
                     </div>
             </div>

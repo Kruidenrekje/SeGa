@@ -23,6 +23,15 @@
 #app {
     .navbar-default {
             background-color: $navbar-default-bg;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            padding-bottom: 2px;
+            margin-bottom: 0px;
+=======
+>>>>>>> origin/M-branch1
+
+>>>>>>> origin/M-branch1
         .name {
             p {
                 color: white;
@@ -45,6 +54,8 @@
                     }
                 }
             }
+        }
+
         .open a {
             background-color: #4a4d54;
         }
@@ -88,10 +99,14 @@
     .categories {
     text-align: center;
 
-        button {
+        button {    
             color: black;
+<<<<<<< HEAD
+=======
             background: linear-gradient(#FF9E1D, #FFB31A);
+>>>>>>> origin/M-branch1
             border-radius: 0px;
+        }
 
         &:hover {
             color: black;
@@ -99,14 +114,26 @@
         }
         }
 
-        .btn-group {
-        vertical-align: none;
+        .btn-group {   
+        margin: 3px;
+        margin-left: 0px;
         }
-        }
-
-    .buttons {
+    
+        .buttons {
         .btn-sm {
             padding: 8px;
+        }
+    }
+
+    .dropdown {
+        li {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+            }
+        }
+        &:hover {
+
         }
     }
 
@@ -122,4 +149,7 @@
                 color: white;
             }
     }
+<<<<<<< HEAD
+=======
 }
+>>>>>>> origin/M-branch1
