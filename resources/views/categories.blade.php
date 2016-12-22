@@ -5,7 +5,12 @@
 			<h1>Welcome to Mechanistry</h1>
 			<h3>With this tool, you can easily find Game Mechanics that fit your own
 				projects and help you with getting ideas.</h3>
-	</div>
+</div>
+
+<div class="jumbotron other color">
+			<h3>Testtekst.</h3>
+</div>
+
 <div  class="container">
 	<div class="row">
 		<div class="col-md-12">

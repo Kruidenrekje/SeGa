@@ -7711,9 +7711,12 @@ button.close {
   font-size: 12pt;
 }
 
+.other-color {
+  background-color: #F2F2F2;
+}
+
 #app .navbar-default {
   background-color: #303338;
-  padding-bottom: 2px;
 }
 
 #app .navbar-default .name p {
