@@ -22,6 +22,12 @@
 					<input type="text" name="label" id="label" class="form-control" placeholder="Enter labels of the mechanic"/>
 			</div>
 
+			<div class="form-group">
+	     <label for="photo">Upload a gif of the mechanic </label>
+	     <input type="file" class="form-control-file" id="mechanicphoto" aria-describedby="whyphoto">
+	     <small id="whyphoto" class="form-text text-muted">By uploading a gif where the mechanic is demonstrated, users can easily determine if they want to use this mechanic or not.</small>
+	   	</div>
+
 	    {{ csrf_field() }}
 	    <input type="submit" name="submit" class="btn btn-primary" value="Save">
 
