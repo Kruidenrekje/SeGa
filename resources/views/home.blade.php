@@ -1,16 +1,12 @@
+<<<<<<< HEAD
+=======
 @extends('layouts.app')
 @section('content')
 
 <div class="jumbotron">
-			<h1>Welcome to Mechanistry</h1>
-			<h3>With this tool, you can easily find Game Mechanics that fit your own
-				projects and help you with getting ideas.</h3>
+			<h1>Welcomehijowrohijjkl!</h1>
+			<h3>Start browsing by selecting a category</h3>
 </div>
-
-<div class="jumbotron other color">
-			<h3>Testtekst.</h3>
-</div>
-
 <div  class="container">
 	<div class="row">
 		<div class="col-md-12">
@@ -44,3 +40,4 @@
     </div>
 </div>
 @endsection
+>>>>>>> origin/M-branch1
