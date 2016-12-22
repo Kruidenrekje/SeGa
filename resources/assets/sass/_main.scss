@@ -1,72 +1,31 @@
-@font-face {
-    font-family: Quatron;
-    src: url(..public/fonts/Quatron.ttf);
-}
-
-.jumbotron {
-            background-color: #E6E6E6;
-          h1 {
-            font-size: 20pt;
-            font-weight: bold;
-          }
-          h2 {
-            font-size: 16pt;
-          }
-          h3 {
-            font-size: 12pt;
-          }
-          text-align: center;
-          }
-.other-color{
-  background-color: #F2F2F2;
-}
-
 #app {
     .navbar-default {
-            background-color: $navbar-default-bg;
-            margin-bottom: 0px;
-
-        .name {
-            p {
-                color: white;
-                font-size: 26px;
-                text-align: center;
-                font-weight: bold;
-                margin-top: 10px;
-                font-family: Quatron;
-            }
-        }
+            background-color: #353a42;
+            padding-bottom: 2px;
         .navbar-nav {
             li {
                 a {
-                    color: white;
-                    font-weight: bold;
-
+                    color: $navbar-default-link-color;
                     &:hover {
                         background-color: $navbar-default-link-hover-color;
                         border-radius: 3px;
                     }
                 }
             }
-        }
-
         .open a {
             background-color: #4a4d54;
         }
         }
-
-        //Hamburger menu
         .navbar-toggle {
-            border-color: white;
+            border-color: $navbar-default-link-color;
             &:hover {
                 background-color: $navbar-default-link-hover-color;
             }
             &:focus {
                 background-color: $navbar-default-link-hover-color;
             }
-
             span {
-                background-color: white;
+                background-color: $navbar-default-link-color;
             }
         }
         img {
@@ -74,72 +33,78 @@
             height: auto;
 
         }
-
-        #custom-search-input {
-                input {
-                    width: 100%;
-                    text-align: center;
-                }
-                .input-group {
-                    width: 100%;
-                }
-        }
+    }
 }
 
-    .welcome {
+//SEARCHBAR
+#custom-search-input {
+        margin:0;
+        margin-top: 10px;
+        padding: 0;
+    }
+ 
+    #custom-search-input .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    #custom-search-input button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color:#D9230F;  
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+
+.btn-block {
+    background-color: orange;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+hr {
+    color: $navbar-default-link-color;
+    size: 10px;
+}
+
+.welcome {
     text-align: center;
-      }
+}
 
-    .categories {
+.categories {
     text-align: center;
 
-        button {
-            color: black;
-            background: linear-gradient(#FF9E1D, #FFB31A);
-            border-radius: 0px;
-        }
-
-        &:hover {
-            color: black;
-            background-color: #FFB31A;
-        }
-        }
-
-        .btn-group {
-        margin: 3px;
-        margin-left: 0px;
-        }
-
-        .buttons {
-        .btn-sm {
-            padding: 8px;
-        }
+    button {
+        color: black;
     }
+}
 
-    .dropdown {
-        li {
-            list-style-type: none;
-            a {
-                text-decoration: none;
-            }
-        }
-        &:hover {
-
-        }
-    }
-
-    footer {
-        position:fixed;
-        left:0px;
-        bottom:0px;
-        height:30px;
-        width:100%;
-        background: $footer-default-bg;
-            p {
-                text-align: center;
-                color: white;
-            }
-    }
-
+td {
+    .buttons {
+    float: left !important;
+    padding: 0px !important;
+    line-height: 0px !important;
     
-
+    }
+}

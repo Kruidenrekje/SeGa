@@ -5168,7 +5168,7 @@ tbody.collapse.in {
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #53565b;
-  background-color: #ffb24d;
+  background-color: #FFF;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -5209,7 +5209,7 @@ tbody.collapse.in {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #53565b;
-    background-color: #ffb24d;
+    background-color: #FFF;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555;
@@ -7688,50 +7688,13 @@ button.close {
   }
 }
 
-@font-face {
-  font-family: Quatron;
-  src: url(..public/fonts/Quatron.ttf);
-}
-
-.jumbotron {
-  background-color: #E6E6E6;
-  text-align: center;
-}
-
-.jumbotron h1 {
-  font-size: 20pt;
-  font-weight: bold;
-}
-
-.jumbotron h2 {
-  font-size: 16pt;
-}
-
-.jumbotron h3 {
-  font-size: 12pt;
-}
-
-.other-color {
-  background-color: #F2F2F2;
-}
-
 #app .navbar-default {
-  background-color: #303338;
-  margin-bottom: 0px;
-}
-
-#app .navbar-default .name p {
-  color: white;
-  font-size: 26px;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 10px;
-  font-family: Quatron;
+  background-color: #353a42;
+  padding-bottom: 2px;
 }
 
 #app .navbar-default .navbar-nav li a {
-  color: white;
-  font-weight: bold;
+  color: #FF9E1D;
 }
 
 #app .navbar-default .navbar-nav li a:hover {
@@ -7739,38 +7702,75 @@ button.close {
   border-radius: 3px;
 }
 
-#app .navbar-default .open a {
+#app .navbar-default .navbar-nav .open a {
   background-color: #4a4d54;
 }
 
-#app .navbar-toggle {
-  border-color: white;
+#app .navbar-default .navbar-toggle {
+  border-color: #FF9E1D;
 }
 
-#app .navbar-toggle:hover {
+#app .navbar-default .navbar-toggle:hover {
   background-color: #53565b;
 }
 
-#app .navbar-toggle:focus {
+#app .navbar-default .navbar-toggle:focus {
   background-color: #53565b;
 }
 
-#app .navbar-toggle span {
-  background-color: white;
+#app .navbar-default .navbar-toggle span {
+  background-color: #FF9E1D;
 }
 
-#app img {
+#app .navbar-default img {
   width: 100%;
   height: auto;
 }
 
-#app #custom-search-input input {
-  width: 100%;
-  text-align: center;
+#custom-search-input {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
 }
 
-#app #custom-search-input .input-group {
-  width: 100%;
+#custom-search-input .search-query {
+  padding-right: 3px;
+  padding-right: 4px \9;
+  padding-left: 3px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  border-radius: 3px;
+}
+
+#custom-search-input button {
+  border: 0;
+  background: none;
+  /** belows styles are working good */
+  padding: 2px 5px;
+  margin-top: 2px;
+  position: relative;
+  left: -28px;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  border-radius: 3px;
+  color: #D9230F;
+}
+
+.search-query:focus + button {
+  z-index: 3;
+}
+
+.btn-block {
+  background-color: orange;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+hr {
+  color: #FF9E1D;
+  size: 10px;
 }
 
 .welcome {
@@ -7783,45 +7783,12 @@ button.close {
 
 .categories button {
   color: black;
-  background: -webkit-linear-gradient(#FF9E1D, #FFB31A);
-  background: linear-gradient(#FF9E1D, #FFB31A);
-  border-radius: 0px;
 }
 
-.categories:hover {
-  color: black;
-  background-color: #FFB31A;
-}
-
-.btn-group {
-  margin: 3px;
-  margin-left: 0px;
-}
-
-.buttons .btn-sm, .buttons .btn-group-sm > .btn {
-  padding: 8px;
-}
-
-.dropdown li {
-  list-style-type: none;
-}
-
-.dropdown li a {
-  text-decoration: none;
-}
-
-footer {
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  height: 30px;
-  width: 100%;
-  background: #303338;
-}
-
-footer p {
-  text-align: center;
-  color: white;
+td .buttons {
+  float: left !important;
+  padding: 0px !important;
+  line-height: 0px !important;
 }
 
 /*# sourceMappingURL=app.css.map */

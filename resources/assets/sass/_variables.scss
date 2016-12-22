@@ -23,10 +23,10 @@ $line-height-base: 1.6;
 $text-color: #636b6f;
 
 // Navbar
-$navbar-default-bg: #303338; // Dark Gray
-$navbar-default-link-hover-bg: #ffb24d; // Light Orange
-$navbar-default-link-color:  #FF9E1D; // SeGa Orange
-$navbar-default-link-hover-color: #53565b; // Light Gray
+$navbar-default-bg: #303338;
+$navbar-default-link-hover-bg: #FFF;
+$navbar-default-link-color:  #FF9E1D;
+$navbar-default-link-hover-color: #53565b;
 // Buttons
 $btn-default-color: $text-color;
 
@@ -40,6 +40,3 @@ $panel-default-heading-bg: #fff;
 
 // Dropdowncolor
 $dropdown-bg: #4a4d54;
-
-// Footer
-$footer-default-bg: #303338;
