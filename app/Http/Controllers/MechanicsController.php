@@ -64,6 +64,17 @@ public function destroy($id)
     return redirect('/mechanics');
 }
 
+public function search(Request $request)
+{
+    $keyword = $request->input('keyword');
+    $mechanics = Mechanic::where("name", "LIKE", "%$keyword%")->get();
+
+
+    foreach($mechanics as $mechanic)
+    {
+    }
+    return view('search-results', ['mechanics' => $mechanics]);
+}
 
 public function addtoproject(Request $request, $id)
 {
