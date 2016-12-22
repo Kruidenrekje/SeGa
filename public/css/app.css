@@ -7693,10 +7693,35 @@ button.close {
   src: url(..public/fonts/Quatron.ttf);
 }
 
+.jumbotron {
+  background-color: #E6E6E6;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.jumbotron h2 {
+  font-size: 16pt;
+}
+
+.jumbotron h3 {
+  font-size: 12pt;
+}
+
+.other-color {
+  background-color: #F2F2F2;
+}
+
 #app .navbar-default {
   background-color: #303338;
+<<<<<<< HEAD
   padding-bottom: 2px;
   margin-bottom: 0px;
+=======
+>>>>>>> origin/M-branch1
 }
 
 #app .navbar-default .name p {
@@ -7762,12 +7787,17 @@ button.close {
 
 .categories button {
   color: black;
+<<<<<<< HEAD
+=======
+  background: -webkit-linear-gradient(#FF9E1D, #FFB31A);
+  background: linear-gradient(#FF9E1D, #FFB31A);
+>>>>>>> origin/M-branch1
   border-radius: 0px;
 }
 
 .categories:hover {
   color: black;
-  background-color: #ffb24d;
+  background-color: #FFB31A;
 }
 
 .btn-group {

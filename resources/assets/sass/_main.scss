@@ -3,11 +3,31 @@
     src: url(..public/fonts/Quatron.ttf);
 }
 
+.jumbotron {
+            background-color: #E6E6E6;
+          h1 {
+            font-size: 20pt;
+            font-weight: bold;
+          }
+          h2 {
+            font-size: 16pt;
+          }
+          h3 {
+            font-size: 12pt;
+          }
+          text-align: center;
+          }
+.other-color{
+  background-color: #F2F2F2;
+}
 #app {
     .navbar-default {
             background-color: $navbar-default-bg;
+<<<<<<< HEAD
             padding-bottom: 2px;
             margin-bottom: 0px;
+=======
+>>>>>>> origin/M-branch1
 
         .name {
             p {
@@ -60,8 +80,8 @@
 
         #custom-search-input {
                 input {
-                    width: 100%;  
-                    text-align: center;    
+                    width: 100%;
+                    text-align: center;
                 }
                 .input-group {
                     width: 100%;
@@ -71,19 +91,23 @@
 
     .welcome {
     text-align: center;
-    }
+      }
 
     .categories {
     text-align: center;
 
         button {    
             color: black;
+<<<<<<< HEAD
+=======
+            background: linear-gradient(#FF9E1D, #FFB31A);
+>>>>>>> origin/M-branch1
             border-radius: 0px;
         }
 
         &:hover {
             color: black;
-            background-color: $navbar-default-link-hover-bg;
+            background-color: #FFB31A;
         }
         }
 
@@ -94,7 +118,7 @@
     
         .buttons {
         .btn-sm {
-            padding: 8px;   
+            padding: 8px;
         }
     }
 
@@ -122,3 +146,7 @@
                 color: white;
             }
     }
+<<<<<<< HEAD
+=======
+}
+>>>>>>> origin/M-branch1
