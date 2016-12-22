@@ -7717,6 +7717,7 @@ button.close {
 
 #app .navbar-default {
   background-color: #303338;
+  margin-bottom: 0px;
 }
 
 #app .navbar-default .name p {
