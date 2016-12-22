@@ -7696,6 +7696,7 @@ button.close {
 #app .navbar-default {
   background-color: #303338;
   padding-bottom: 2px;
+  margin-bottom: 0px;
 }
 
 #app .navbar-default .name p {
@@ -7717,68 +7718,77 @@ button.close {
   border-radius: 3px;
 }
 
-#app .navbar-default .navbar-nav .open a {
+#app .navbar-default .open a {
   background-color: #4a4d54;
 }
 
-#app .navbar-default .navbar-toggle {
+#app .navbar-toggle {
   border-color: white;
 }
 
-#app .navbar-default .navbar-toggle:hover {
+#app .navbar-toggle:hover {
   background-color: #53565b;
 }
 
-#app .navbar-default .navbar-toggle:focus {
+#app .navbar-toggle:focus {
   background-color: #53565b;
 }
 
-#app .navbar-default .navbar-toggle span {
+#app .navbar-toggle span {
   background-color: white;
 }
 
-#app .navbar-default img {
+#app img {
   width: 100%;
   height: auto;
 }
 
-#app .navbar-default #custom-search-input input {
+#app #custom-search-input input {
   width: 100%;
   text-align: center;
 }
 
-#app .navbar-default #custom-search-input .input-group {
+#app #custom-search-input .input-group {
   width: 100%;
 }
 
-#app .welcome {
+.welcome {
   text-align: center;
 }
 
-#app .categories {
+.categories {
   text-align: center;
 }
 
-#app .categories button {
+.categories button {
   color: black;
-  background-color: #FF9E1D;
   border-radius: 0px;
 }
 
-#app .categories button:hover {
+.categories:hover {
   color: black;
   background-color: #ffb24d;
 }
 
-#app .categories .btn-group {
-  vertical-align: none;
+.btn-group {
+  margin: 3px;
+  margin-left: 0px;
 }
 
-#app .buttons .btn-sm, #app .buttons .btn-group-sm > .btn {
+.buttons .btn-sm, .buttons .btn-group-sm > .btn {
   padding: 8px;
 }
 
-#app footer {
+.dropdown li {
+  list-style-type: none;
+}
+
+.dropdown li a {
+  color: orange;
+  text-decoration: none;
+}
+
+footer {
   position: fixed;
   left: 0px;
   bottom: 0px;
@@ -7787,7 +7797,7 @@ button.close {
   background: #303338;
 }
 
-#app footer p {
+footer p {
   text-align: center;
   color: white;
 }

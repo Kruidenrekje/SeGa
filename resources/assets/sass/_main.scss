@@ -7,6 +7,7 @@
     .navbar-default {
             background-color: $navbar-default-bg;
             padding-bottom: 2px;
+            margin-bottom: 0px;
 
         .name {
             p {
@@ -30,6 +31,8 @@
                     }
                 }
             }
+        }
+
         .open a {
             background-color: #4a4d54;
         }
@@ -73,10 +76,10 @@
     .categories {
     text-align: center;
 
-        button {
+        button {    
             color: black;
-            background-color: $navbar-default-link-color;
             border-radius: 0px;
+        }
 
         &:hover {
             color: black;
@@ -84,14 +87,28 @@
         }
         }
 
-        .btn-group {
-        vertical-align: none;
+        .btn-group {   
+        margin: 3px;
+        margin-left: 0px;
         }
-        }
+    
 
     .buttons {
         .btn-sm {
             padding: 8px;   
+        }
+    }
+
+    .dropdown {
+        li {
+            list-style-type: none;
+            a {
+                color: orange; 
+                text-decoration: none;
+            }
+        }
+        &:hover {
+
         }
     }
 
@@ -107,4 +124,3 @@
                 color: white;
             }
     }
-}
