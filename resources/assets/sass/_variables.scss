@@ -1,6 +1,6 @@
 
 // Body
-$body-bg: #f5f8fa;
+$body-bg: white;
 
 // Borders
 $laravel-border-color: darken($body-bg, 10%);
@@ -27,6 +27,7 @@ $navbar-default-bg: #303338; // Dark Gray
 $navbar-default-link-hover-bg: #ffb24d; // Light Orange
 $navbar-default-link-color:  #FF9E1D; // SeGa Orange
 $navbar-default-link-hover-color: #53565b; // Light Gray
+
 // Buttons
 $btn-default-color: $text-color;
 
@@ -43,3 +44,7 @@ $dropdown-bg: #4a4d54;
 
 // Footer
 $footer-default-bg: #303338;
+
+// Tables
+$table-border-color:            #E6E6E6;
+

@@ -7,37 +7,56 @@
 				projects and help you with getting ideas.</h3>
 </div>
 
-<div class="jumbotron other color">
-			<h3>Testtekst.</h3>
+<div class="container-fluid">
+<div class="container">
+    <h1>Mechanic Categories</h1>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="categories">
+                <div class="col-xs-6 col-md-4">
+                        <button class="btn btn-block">Goal</button>
+                        <button class="btn btn-block">Interaction</button>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                        <button class="btn btn-block">Goal</button>
+                        <button class="btn btn-block">Interaction</button>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                        <button class="btn btn-block">Goal</button>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                        <button class="btn btn-block">Movement</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
-<div  class="container">
+<div class="container">
+    <h1>Mechanic Categories</h1>
 	<div class="row">
 		<div class="col-md-12">
 			<div class="categories">
                 <div class="col-xs-6 col-md-4">
-                    <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-block">Goal</button>
-                        <button type="button" class="btn btn-block">Interaction</button>
-                        <button type="button" class="btn btn-block">Movement</button>
-                        <button type="button" class="btn btn-block">Puzzle</button>
-                    </div>
+                        <button class="btn btn-block">Goal</button>
+                        <button class="btn btn-block">Interaction</button>
+                        <button class="btn btn-block">Movement</button>
+                        <button class="btn btn-block">Puzzle</button>
                 </div>
                 <div class="col-xs-6 col-md-4">
-                    <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-block">Goal</button>
-                        <button type="button" class="btn btn-block">Interaction</button>
-                        <button type="button" class="btn btn-block">Movement</button>
-                        <button type="button" class="btn btn-block">Puzzle</button>
-                    </div>
+                        <button class="btn btn-block">Goal</button>
+                        <button class="btn btn-block">Interaction</button>
+                        <button class="btn btn-block">Movement</button>
+                        <button class="btn btn-block">Puzzle</button>
                 </div>
                 <div class="col-xs-6 col-md-4">
-                    <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-block">Goal</button>
-                        <button type="button" class="btn btn-block">Interaction</button>
-                        <button type="button" class="btn btn-block">Movement</button>
-                        <button type="button" class="btn btn-block">Puzzle</button>
-                    </div>
+                        <button class="btn btn-block">Goal</button>
+                        <button class="btn btn-block">Interaction</button>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                        <button class="btn btn-block">Movement</button>
+                        <button class="btn btn-block">Puzzle</button>
                 </div>
             </div>
         </div>
