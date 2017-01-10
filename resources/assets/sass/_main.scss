@@ -53,22 +53,29 @@ th {
                 font-family: Quatron;
             }
         }
+
+
         .navbar-nav {
+             .dropdown-menu {
+                        a {color: black;}
+                        a:hover{background-color: #F2F2F2;
+                                border-radius: 0px;}
+                    }
             li {
                 a {
+                    border-radius: 3px;
                     color: white;
-                    font-weight: bold;
 
-                    &:hover {
+                &:hover {
                         background-color: $navbar-default-link-hover-color;
-                        border-radius: 3px;
-                    }
+                        }
                 }
             }
         }
 
+
         .open a {
-            background-color: #4a4d54;
+                    color: black;
         }
         }
 

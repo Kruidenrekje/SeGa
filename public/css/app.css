@@ -4095,7 +4095,7 @@ tbody.collapse.in {
   list-style: none;
   font-size: 14px;
   text-align: left;
-  background-color: #4a4d54;
+  background-color: white;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -7748,18 +7748,26 @@ th {
   font-family: Quatron;
 }
 
+#app .navbar-default .navbar-nav .dropdown-menu a {
+  color: black;
+}
+
+#app .navbar-default .navbar-nav .dropdown-menu a:hover {
+  background-color: #F2F2F2;
+  border-radius: 0px;
+}
+
 #app .navbar-default .navbar-nav li a {
+  border-radius: 3px;
   color: white;
-  font-weight: bold;
 }
 
 #app .navbar-default .navbar-nav li a:hover {
   background-color: #53565b;
-  border-radius: 3px;
 }
 
 #app .navbar-default .open a {
-  background-color: #4a4d54;
+  color: black;
 }
 
 #app .navbar-toggle {
