@@ -20,12 +20,12 @@
 
               <input type="hidden" name="_method" value="delete">
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
-              <a href="{{route('add-to-project',$mechanic->id)}}" class="btn btn-primary">Add to Project</a>
+              <a href="{{route('add-to-project',$mechanic->id)}}" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></a>
 
               <input type="hidden" name="_method" value="delete">
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
-              <a href="{{route('edit-mechanic',$mechanic->id)}}" class="btn btn-primary">Edit</a>
-              <input type="submit" class="btn btn-danger" onclick="return confirm('Are you sure to delete this data?');" name="name" value="Delete">
+              <a href="{{route('edit-mechanic',$mechanic->id)}}" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></a>
+              <a href="" type="submit" class="btn btn-danger" onclick="return confirm('Are you sure to delete this data?');"><span class="glyphicon glyphicon-trash"></a>
             </td>
         </tr>
         @endforeach

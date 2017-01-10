@@ -112,7 +112,7 @@ th {
 
         button {
             color: black;
-            background: linear-gradient(#FF9E1D, #FFB31A);
+            background: $btn-primary;
             border-radius: 5px;
             padding-bottom: 10px;
             padding-top: 10px;
@@ -134,10 +134,42 @@ th {
         margin-bottom: 8px;
         }
 
-        .buttons {
-        .btn-sm {
-            padding: 8px;
+        #panel-body {
+            .btn-primary {
+                background-color: $btn-primary;
+                color: black;
+            }
+
+            a {
+                color: white;
+            }
         }
+
+        .buttons {
+
+            .btn-primary {
+                background: $btn-primary;
+                color: black;
+                outline: none;
+                border: none !important;
+                margin-bottom: 4px;
+
+            }
+            .btn-secondary {
+                background: $btn-primary-lighter;
+                color: black;
+                outline: none;
+                border: none !important;
+                margin-bottom: 4px;
+            }
+
+            .btn-danger {
+                background: $btn-gray;
+                color: white;
+                outline: none;
+                border: none !important;
+                margin-bottom: 4px;
+            }
     }
 
     .dropdown {
@@ -154,6 +186,7 @@ th {
 
     footer {
         position:fixed;
+        z-index: 100 !important;
         left:0px;
         bottom:0px;
         height:30px;
@@ -166,4 +199,10 @@ th {
     }
 
     
-
+form {
+    input {
+        .btn-succes {
+            background-color: $btn-primary-color;
+        }
+    }
+}

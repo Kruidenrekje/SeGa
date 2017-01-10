@@ -23,13 +23,18 @@ $line-height-base: 1.6;
 $text-color: #636b6f;
 
 // Navbar
-$navbar-default-bg: #303338; // Dark Gray
-$navbar-default-link-hover-bg: #ffb24d; // Light Orange
+$navbar-default-bg: #404040; // Dark Gray
+$navbar-default-link-hover-bg: #FFCC66; // Light Orange
 $navbar-default-link-color:  #FF9E1D; // SeGa Orange
 $navbar-default-link-hover-color: #53565b; // Light Gray
 
 // Buttons
 $btn-default-color: $text-color;
+$btn-primary: linear-gradient(#FF9E1D, #FFB31A);
+$btn-primary-lighter: linear-gradient(#FFCC66, #FFD580);
+$btn-gray: #666666;
+
+
 
 // Inputs
 $input-border: lighten($text-color, 40%);
@@ -46,5 +51,5 @@ $dropdown-bg: #4a4d54;
 $footer-default-bg: #303338;
 
 // Tables
-$table-border-color:            #E6E6E6;
+$table-border-color: #E6E6E6;
 

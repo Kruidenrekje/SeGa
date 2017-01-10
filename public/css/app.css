@@ -5145,7 +5145,7 @@ tbody.collapse.in {
 }
 
 .navbar-default {
-  background-color: #303338;
+  background-color: #404040;
   border-color: #e6e6e6;
 }
 
@@ -5168,12 +5168,12 @@ tbody.collapse.in {
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #53565b;
-  background-color: #ffb24d;
+  background-color: #FFCC66;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #555;
-  background-color: #212326;
+  background-color: #2f2f2f;
 }
 
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
@@ -5199,7 +5199,7 @@ tbody.collapse.in {
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #212326;
+  background-color: #2f2f2f;
   color: #555;
 }
 
@@ -5209,11 +5209,11 @@ tbody.collapse.in {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #53565b;
-    background-color: #ffb24d;
+    background-color: #FFCC66;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555;
-    background-color: #212326;
+    background-color: #2f2f2f;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     color: #ccc;
@@ -7735,7 +7735,7 @@ th {
 }
 
 #app .navbar-default {
-  background-color: #303338;
+  background-color: #404040;
   margin-bottom: 0px;
 }
 
@@ -7823,8 +7823,39 @@ th {
   margin-bottom: 8px;
 }
 
-.buttons .btn-sm, .buttons .btn-group-sm > .btn {
-  padding: 8px;
+#panel-body .btn-primary {
+  background-color: linear-gradient(#FF9E1D, #FFB31A);
+  color: black;
+}
+
+#panel-body a {
+  color: white;
+}
+
+.buttons .btn-primary {
+  background: -webkit-linear-gradient(#FF9E1D, #FFB31A);
+  background: linear-gradient(#FF9E1D, #FFB31A);
+  color: black;
+  outline: none;
+  border: none !important;
+  margin-bottom: 4px;
+}
+
+.buttons .btn-secondary {
+  background: -webkit-linear-gradient(#FFCC66, #FFD580);
+  background: linear-gradient(#FFCC66, #FFD580);
+  color: black;
+  outline: none;
+  border: none !important;
+  margin-bottom: 4px;
+}
+
+.buttons .btn-danger {
+  background: #666666;
+  color: white;
+  outline: none;
+  border: none !important;
+  margin-bottom: 4px;
 }
 
 .dropdown li {
@@ -7837,6 +7868,7 @@ th {
 
 footer {
   position: fixed;
+  z-index: 100 !important;
   left: 0px;
   bottom: 0px;
   height: 30px;
@@ -7847,6 +7879,10 @@ footer {
 footer p {
   text-align: center;
   color: white;
+}
+
+form input .btn-succes {
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=app.css.map */

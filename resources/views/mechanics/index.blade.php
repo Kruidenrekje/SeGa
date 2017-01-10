@@ -38,15 +38,15 @@
 
               <input type="hidden" name="_method" value="delete">
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
-              <a href="{{route('add-to-project',$mechanic->id)}}" class="btn btn-primary">Add to Project</a>
+              <a href="{{route('add-to-project',$mechanic->id)}}" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></a>
 
               <input type="hidden" name="_method" value="delete">
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
-              <a href="{{route('edit-mechanic',$mechanic->id)}}" class="btn btn-primary">Edit</a>
+              <a href="{{route('edit-mechanic',$mechanic->id)}}" class="btn btn-secondary"><span class="glyphicon glyphicon-pencil"></a>
 
               <input type="hidden" name="_method" value="destroy">
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
-              <a href="{{route('destroy-mechanic',$mechanic->id)}}" class="btn btn-danger" onclick="return confirm('Are you sure to delete this data?')">Delete</a>
+              <a href="{{route('destroy-mechanic',$mechanic->id)}}" class="btn btn-danger" onclick="return confirm('Are you sure to delete this data?')"><span class="glyphicon glyphicon-trash"></a>
 
             </td>
         </tr>

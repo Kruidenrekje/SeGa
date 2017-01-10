@@ -9,7 +9,7 @@
 
 <div class="container-fluid">
 <div class="container">
-    <h1>Mechanic Categories</h1>
+    <h1>Recommended Mechanics</h1>
     <div class="row">
         <div class="col-md-12">
             <div class="categories">
@@ -39,10 +39,10 @@
 		<div class="col-md-12">
 			<div class="categories">
                 <div class="col-xs-6 col-md-4">
-                        <button class="btn btn-block">Goal</button>
-                        <button class="btn btn-block">Interaction</button>
-                        <button class="btn btn-block">Movement</button>
-                        <button class="btn btn-block">Puzzle</button>
+                        <button class="btn btn-block">Calculation</button>
+                        <button class="btn btn-block">Customization</button>
+                        <button class="btn btn-block">Fighting</button>
+                        <button class="btn btn-block">Game Modes</button>
                 </div>
                 <div class="col-xs-6 col-md-4">
                         <button class="btn btn-block">Goal</button>
@@ -51,12 +51,11 @@
                         <button class="btn btn-block">Puzzle</button>
                 </div>
                 <div class="col-xs-6 col-md-4">
-                        <button class="btn btn-block">Goal</button>
-                        <button class="btn btn-block">Interaction</button>
+                        <button class="btn btn-block">Resources</button>
+                        <button class="btn btn-block">RNG</button>
                 </div>
                 <div class="col-xs-6 col-md-4">
-                        <button class="btn btn-block">Movement</button>
-                        <button class="btn btn-block">Puzzle</button>
+                        <button class="btn btn-block">Social</button>
                 </div>
             </div>
         </div>
