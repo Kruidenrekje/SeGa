@@ -13,7 +13,6 @@
         </tr>
 
         <tr>
-        <tr>   
             <td>{{ $mechanic->name }}</td>
             <td>{{ $mechanic->description }}</td>
             <td>{{ $mechanic->label }}</td>
@@ -28,6 +27,10 @@
           <input type="text" name="name" id="name" class="form-control" placeholder="Enter name of the mechanic"/>
       </div>
       </form>
+      {{ csrf_field() }}
+      <input type="submit" name="submit" class="btn btn-primary" value="Create">
+
       </div>
+
 
 @endsection
