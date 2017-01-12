@@ -27,8 +27,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="name">
-                        <p>Mechanistry</p>
+                    <div class="logo">
+                        <img src="img/mechanistrylogo.png">
                     </div>
                 </div>
             </div>
@@ -41,9 +41,24 @@
                                     <span class="glyphicon glyphicon-search form-control-feedback"></span>
                             </div>
                     </div>
-                </div>
+
+        <div class="dol-md-7">
+        <div id="custom-search-input">
+        
+        <!--Deze Form wordt geopend en linkt naar een route, vervolgens haalt hij de keyword uit het tekstvak en submit hij wat in dit tekstvak staat-->
+            {!! Form::open(array('method' =>'GET', 'route' =>'search-results')) !!}
+            <div class="input-group col-md-7">
+            {!!Form::text('keyword', null, array('placeholder'=>'Search for categories or mechanics'))!!}
+                  <span class="input-group-btn">
+                  <button class="btn btn-danger" type="button">
+                  {!!Form::submit('search')!!}
+                  <span class=" glyphicon glyphicon-search"></span>
+                  </button>
+                  </span>
             </div>
-                        {!!Form::close()!!}
+        </div>
+        </div>
+        {!!Form::close()!!}
 
                     <!-- Collapsed Hamburger -->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
@@ -52,12 +67,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                                <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav pull-left">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ route('categories') }}">Home</a></li>
+                            <li><a href="{{ route('categories') }}">Categories</a></li>
                             <li><a href="{{ route('mechanics') }}">Game mechanics</a></li>
                             <li><a href="{{ route('projects') }}">My projects</a></li>
 
@@ -70,7 +85,7 @@
                     <ul class="nav navbar-nav pull-left">
                         @else
 
-                            <li><a href="{{ route('categories') }}">Home</a></li>
+                            <li><a href="{{ route('categories') }}">Categories</a></li>
                             <li><a href="{{ route('mechanics') }}">Game mechanics</a></li>
                             <li><a href="{{ route('projects') }}">My projects</a></li>
                     </ul>
@@ -91,9 +106,6 @@
                 </div>
             </div>
         </nav>
-        <footer>
-            <p>Copyright by Serious Gaming.</p>
-        </footer>
         @yield('content')
     </div>
     <!-- Scripts -->
